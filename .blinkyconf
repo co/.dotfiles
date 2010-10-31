@@ -1,0 +1,14 @@
+# Set terminal (Default: xterm)
+# Supported terminals: xterm,gnome-terminal,
+# konsole,aterm,eterm,mrxvt,mlterm,rxvt
+TERMINAL=xterm
+
+# Set sudo command (Default: sudo)
+# Supported implementations: sudo,kdesudo,gksudo
+SUDO=sudo
+
+# Enable debug mode
+DEBUG=false
+
+# Define log file
+LOGFILE=/home/co/.blinkylog

@@ -1,0 +1,91 @@
+# .zshrc
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=5000
+SAVEHIST=10000
+setopt appendhistory autocd nomatch
+unsetopt beep extendedglob
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+#zstyle :compinstall filename '/home/co/.zshrc'
+
+#autoload -Uz compinit
+#compinit
+# End of lines added by compinstall
+alias -g EG='|& egrep'
+alias -g EH='|& head'
+alias -g EL='|& less'
+alias -g ET='|& tail'
+PS1=$'%{\e[1;36m%}[%{\e[1;34m%}%~%{\e[1;36m%}]%{\e[0;33m%}€%{\e[0m%} '
+
+
+#xtermcontrol #snygga färger, ställ in på .xtermcontrol ! bara i xterm duh.
+
+#less on steroids
+ LESSOPEN="|lesspipe.sh %s"; export LESSOPEN
+
+PATH=$PATH:/home/co/bin:.
+alias sv="sudo vim"
+alias c="sudo clyde"
+alias hist="history | head"
+alias vi="vim"
+alias pc="pcmanfm"
+alias www="kazehakase"
+alias ls='ls --color=auto'
+alias la="ls -a"
+#Gvim med menyer om avstängd i .vimrc (hoppar över alla .vimrc)
+alias gvimm="gvim -u ''"
+# Lets you search through all available packages simply using 'pacsearch packagename'
+alias pacsearch="clyde -Sl | cut -d' ' -f2 | grep "
+alias grep="grep --color=auto"  
+# sudo pacman -Syu by typing pacup (sudo must be installed and configured first)
+alias pacup="sudo clyde -Syu"
+# sudo pacman -S by typing pac
+alias pac="sudo clyde -S"
+# colorized pacman output with pacs alias:
+alias pacs="pacsearch"
+alias mu="ncmpcpp"
+alias rt='rtorrent'
+alias kaz='kazehakase'
+alias th='thunar'
+#nada login
+alias kth='ssh coer@my.nada.kth.se'
+#crawl
+alias netcrawl='echo 'joshua' && ssh joshua@crawl.akrasiac.org'
+# search in history
+alias hs="cat /home/co/.histfile | grep"
+alias office="soffice"
+
+export VISUAL=vim
+export PAGER=less
+export MANPAGER=less
+
+
+alias t="todo.sh"
+
+
+#LOLZSH!!1!
+# LOL!!1
+
+alias wtf='dmesg'
+alias onoz='sudo cat /var/log/errors.log'
+alias rtfm='man'
+
+alias moar='less'
+
+alias icanhas='mkdir'
+alias donotwant='rm -i'
+alias dowant='cp'
+alias gtfo='mv'
+
+alias hai='cd'
+alias plz='pwd'
+
+alias inur='locate'
+
+alias nomz='ps -aux'
+alias nomnom='killall'
+
+alias cya='reboot'
+alias kthxbai='halt'

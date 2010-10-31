@@ -1,0 +1,6 @@
+shell touch test
+open_with
+search test
+shell 
+open_with h
+shell w

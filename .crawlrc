@@ -1,0 +1,84 @@
+include = init.txt
+bindkey = [m]  CMD_MOVE_DOWN_LEFT
+bindkey = [d]  CMD_MOVE_LEFT
+bindkey = [h]  CMD_MOVE_DOWN
+bindkey = [t]  CMD_MOVE_UP
+bindkey = [n]  CMD_MOVE_RIGHT
+bindkey = [w]  CMD_MOVE_DOWN_RIGHT
+bindkey = [c]  CMD_MOVE_UP_RIGHT
+bindkey = [g]  CMD_MOVE_UP_LEFT
+
+bindkey = [M]  CMD_RUN_DOWN_LEFT
+bindkey = [D]  CMD_RUN_LEFT
+bindkey = [H]  CMD_RUN_DOWN
+bindkey = [T]  CMD_RUN_UP
+bindkey = [N]  CMD_RUN_RIGHT
+bindkey = [W]  CMD_RUN_DOWN_RIGHT
+bindkey = [C]  CMD_RUN_UP_RIGHT
+bindkey = [G]  CMD_RUN_UP_LEFT
+
+bindkey = [^M]  CMD_OPEN_DOOR_DOWN_LEFT
+bindkey = [^D]  CMD_OPEN_DOOR_LEFT
+bindkey = [^H]  CMD_OPEN_DOOR_DOWN
+bindkey = [^T]  CMD_OPEN_DOOR_UP
+bindkey = [^N]  CMD_OPEN_DOOR_RIGHT
+bindkey = [^W]  CMD_OPEN_DOOR_DOWN_RIGHT
+bindkey = [^C]  CMD_OPEN_DOOR_UP_RIGHT
+bindkey = [^G]  CMD_OPEN_DOOR_UP_LEFT
+
+bindkey = [m]  CMD_MAP_MOVE_DOWN_LEFT
+bindkey = [d]  CMD_MAP_MOVE_LEFT
+bindkey = [h]  CMD_MAP_MOVE_DOWN
+bindkey = [t]  CMD_MAP_MOVE_UP
+bindkey = [n]  CMD_MAP_MOVE_RIGHT
+bindkey = [w]  CMD_MAP_MOVE_DOWN_RIGHT
+bindkey = [c]  CMD_MAP_MOVE_UP_RIGHT
+bindkey = [g]  CMD_MAP_MOVE_UP_LEFT
+
+bindkey = [m]  CMD_TARGET_DOWN_LEFT
+bindkey = [d]  CMD_TARGET_LEFT
+bindkey = [h]  CMD_TARGET_DOWN
+bindkey = [t]  CMD_TARGET_UP
+bindkey = [n]  CMD_TARGET_RIGHT
+bindkey = [w]  CMD_TARGET_DOWN_RIGHT
+bindkey = [c]  CMD_TARGET_UP_RIGHT
+bindkey = [g]  CMD_TARGET_UP_LEFT
+
+bindkey = [M]  CMD_TARGET_DIR_DOWN_LEFT
+bindkey = [D]  CMD_TARGET_DIR_LEFT
+bindkey = [H]  CMD_TARGET_DIR_DOWN
+bindkey = [T]  CMD_TARGET_DIR_UP
+bindkey = [N]  CMD_TARGET_DIR_RIGHT
+bindkey = [W]  CMD_TARGET_DIR_DOWN_RIGHT
+bindkey = [C]  CMD_TARGET_DIR_UP_RIGHT
+bindkey = [G]  CMD_TARGET_DIR_UP_LEFT
+
+bindkey = [u]  CMD_PICKUP
+bindkey = [U]  CMD_INTERLEVEL_TRAVEL
+bindkey = [j]  CMD_WIELD_WEAPON
+bindkey = [J]  CMD_WEAR_ARMOUR
+bindkey = [k]  CMD_SHOUT
+bindkey = [K]  CMD_REMOVE_ARMOUR
+bindkey = [y]  CMD_BUTCHER
+bindkey = [Y]  CMD_CLOSE_DOOR
+bindkey = [b]  CMD_DISPLAY_SKILLS
+bindkey = [B]  CMD_MEMORISE_SPELL
+bindkey = [l]  CMD_DROP
+bindkey = [L]  CMD_DROP
+
+bindkey = [s]  CMD_CAST_SPELL
+bindkey = [S]  CMD_FORCE_CAST_SPELL
+
+
+bindkey = [u]  CMD_TARGET_SELECT
+
+morgue_dir = /home/co/.crawldir
+save_dir = /home/co/.crawldir
+tile_window_width = 1024
+tile_window_height = 600
+#tile_window_width = 0
+#tile_window_height = 0
+tile_full_screen = false
+
+travel_delay = -1
+explore_delay = 3
