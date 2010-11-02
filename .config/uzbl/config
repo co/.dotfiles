@@ -177,6 +177,7 @@ set ebind = @mode_bind global,-insert
 @ebind  <Tab>        = event START_COMPLETION
 # Readline-ish bindings.
 @ebind  <Ctrl>w      = event KEYCMD_STRIP_WORD
+@ebind  <Ctrl>h      = event KEYCMD_STRIP_WORD
 @ebind  <Ctrl>u      = event SET_KEYCMD
 @ebind  <Ctrl>a      = event SET_CURSOR_POS 0
 @ebind  <Ctrl>e      = event SET_CURSOR_POS -1
@@ -213,7 +214,7 @@ set ebind = @mode_bind global,-insert
 @cbind  $            = scroll horizontal end
 #@cbind  <Space>      = scroll vertical end
 
-# --- Navigation binds ---
+   # --- Navigation binds ---
 @cbind  b   = back
 @cbind  m   = forward
 @cbind  S   = stop
@@ -226,6 +227,7 @@ set ebind = @mode_bind global,-insert
 @cbind  T   = toggle_zoom_type
 @cbind  1   = set zoom_level = 1.0
 @cbind  2   = set zoom_level = 2.0
+@cbind  3   = set zoom_level = 3.0
 
 # --- Appearance binds ---
 @cbind  w   = toggle_status
@@ -323,10 +325,11 @@ set toggle_cmd_ins = @toggle_modes command insert
 # Set custom keys you wish to use for navigation. Some common examples:
 #set follow_hint_keys = 0123456789
 #set follow_hint_keys = qwerty
-set follow_hint_keys = aoeuidhtns
-#set follow_hint_keys = asdfghjkl;
+#set follow_hint_keys = aoeuidhtns
+set follow_hint_keys =  huditenosa
+#set follow_hint_keys = aousdfghjkl;
 #set follow_hint_keys = thsnd-rcgmvwb/;789aefijkopquxyz234
-@cbind  fl*  = script @scripts_dir/follow.js '@follow_hint_keys %s'
+@cbind  f*  = script @scripts_dir/follow.js '@follow_hint_keys %s'
 
 # --- Form filler binds ---
 # This script allows you to configure (per domain) values to fill in form
