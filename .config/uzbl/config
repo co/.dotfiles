@@ -48,11 +48,11 @@ set authentication_handler = sync_spawn @scripts_dir/auth.py
 # --- Optional dynamic event handlers ----------------------------------------
 
 # Open link in new window
-@on_event   NEW_WINDOW     sh 'uzbl-browser -u "$8"' %r
+#@on_event   NEW_WINDOW     sh 'uzbl-browser -u "$8"' %r
 # Open in current window
 #@on_event   NEW_WINDOW     uri %s
 # Open in new tab
-#@on_event   NEW_WINDOW     event NEW_TAB %s
+@on_event   NEW_WINDOW     event NEW_TAB %s
 
 # Download handler
 @on_event   DOWNLOAD_REQUEST     spawn $XDG_DATA_HOME/uzbl/scripts/lich-download.sh
@@ -330,7 +330,12 @@ set toggle_cmd_ins = @toggle_modes command insert
 set follow_hint_keys =  huditenosa
 #set follow_hint_keys = aousdfghjkl;
 #set follow_hint_keys = thsnd-rcgmvwb/;789aefijkopquxyz234
-@cbind  f*  = script @scripts_dir/follow.js '@follow_hint_keys %s'
+#@cbind  f*  = script @scripts_dir/follow.js '@follow_hint_keys %s'
+set javascript_windows = 1
+@bind    f*           = script /home/co/.config/uzbl/scripts/follow.js '@{follow_hint_keys} %s'
+@bind    F*           = script /home/co/.config/uzbl/scripts/follow.js '@{follow_hint_keys} new %s'
+
+
 
 # --- Form filler binds ---
 # This script allows you to configure (per domain) values to fill in form
