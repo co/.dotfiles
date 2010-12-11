@@ -4,7 +4,7 @@
 
 theme = {}
 
-theme.font          = "fixed 9"
+theme.font          = "Fixed 9"
 
 theme.bg_normal     = "#262729"
 theme.bg_focus      = "#444444"
@@ -20,6 +20,12 @@ theme.border_width  = "1"
 theme.border_normal = "#444444"
 theme.border_focus  = "#f92672"
 theme.border_marked = "#444444"
+
+theme.fg_netdn_widget = "#afd700"
+theme.fg_netup_widget = "#a0c2de"
+theme.fg_cpu_widget = "#e6db74"
+theme.fg_mem_widget = "#8766c9"
+theme.fg_pac_widget = "#ff5f00"
 
 -- There are other variable sets
 -- overriding the default one when
@@ -42,7 +48,18 @@ theme.awesome_icon           = "/home/co/.config/awesome/themes/default/hat.png"
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = "/home/co/.config/awesome/themes/default/submenu.png"
-theme.menu_height = "14"
+theme.mem_icon = "/home/co/.config/awesome/themes/default/icons/mem.png"
+theme.separator_icon = "/home/co/.config/awesome/themes/default/icons/separator.png"
+theme.cpu_icon = "/home/co/.config/awesome/themes/default/icons/cpu.png"
+theme.up_icon = "/home/co/.config/awesome/themes/default/icons/up.png"
+theme.down_icon = "/home/co/.config/awesome/themes/default/icons/down.png"
+theme.pac_icon = "/home/co/.config/awesome/themes/default/icons/lilpac.png"
+theme.clyde_icon = "/home/co/.config/awesome/themes/default/icons/lilclyde.png"
+theme.blue_icon = "/home/co/.config/awesome/themes/default/icons/lilblue.png"
+theme.mail_icon = "/home/co/.config/awesome/themes/default/icons/mail.png"
+theme.nomail_icon = "/home/co/.config/awesome/themes/default/icons/nomail.png"
+theme.end_icon = "/home/co/.config/awesome/themes/default/icons/end.png"
+theme.menu_height = "13"
 theme.menu_width  = "100"
 
 -- You can add as many variables as
@@ -75,7 +92,7 @@ theme.titlebar_maximized_button_normal_active = "/usr/share/awesome/themes/defau
 theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/default/titlebar/maximized_focus_active.png"
 
 -- You can use your own command to set your wallpaper
-theme.wallpaper_cmd = { "awsetbg /usr/share/awesome/themes/default/background.png" }
+--theme.wallpaper_cmd = { "awsetbg /usr/share/awesome/themes/default/background.png" }
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "/usr/share/awesome/themes/default/layouts/fairhw.png"

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+<title>awesome-configs - configuration files for awesome window manager</title>
+<meta name='generator' content='cgit v0.8.3.4'/>
+<meta name='robots' content='index, nofollow'/>
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<link rel='shortcut icon' href='http://sysphere.org/favicon.ico'/>
+<link rel='alternate' title='Atom feed' href='http://git.sysphere.org/awesome-configs/atom/icons/pacman.png?h=master' type='application/atom+xml'/>
+</head>
+<body>
+<div id='cgit'><table id='header'>
+<tr>
+<td class='logo' rowspan='2'><a href='/'><img src='/scgit.png' alt='cgit logo'/></a></td>
+<td class='main'><a href='/'>index</a> : <a title='awesome-configs' href='/awesome-configs/'>awesome-configs</a></td><td class='form'><form method='get' action=''>
+<select name='h' onchange='this.form.submit();'>
+<option value='master' selected='selected'>master</option>
+</select> <input type='submit' name='' value='switch'/></form></td></tr>
+<tr><td class='sub'>configuration files for awesome window manager</td><td class='sub right'>anrxc</td></tr></table>
+<table class='tabs'><tr><td>
+<a href='/awesome-configs/'>summary</a><a href='/awesome-configs/refs/'>refs</a><a href='/awesome-configs/log/'>log</a><a class='active' href='/awesome-configs/tree/'>tree</a><a href='/awesome-configs/commit/'>commit</a><a href='/awesome-configs/diff/'>diff</a></td><td class='form'><form class='right' method='get' action='/awesome-configs/log/icons/pacman.png'>
+<select name='qt'>
+<option value='grep'>log msg</option>
+<option value='author'>author</option>
+<option value='committer'>committer</option>
+</select>
+<input class='txt' type='text' size='10' name='q' value=''/>
+<input type='submit' value='search'/>
+</form>
+</td></tr></table>
+<div class='content'>path: <a href='/awesome-configs/tree/?h=master'>root</a>/<a href='/awesome-configs/tree/icons'>icons</a>/<a href='/awesome-configs/tree/icons/pacman.png'>pacman.png</a> (<a href='/awesome-configs/plain/icons/pacman.png'>plain</a>)<br/>blob: 466c34f2b3885bbff3b17538d0bce18f1abbf688
+<table summary='blob content' class='bin-blob'>
+<tr><th>ofs</th><th>hex dump</th><th>ascii</th></tr><tr><td class='right'>0000</td><td class='hex'> 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52    00 00 00 0e 00 00 00 0e 08 06 00 00 00 1f 48 2d </td><td class='hex'>.PNG........IHDR..............H-</td></tr>
+<tr><td class='right'>0020</td><td class='hex'> d1 00 00 00 01 73 52 47 42 00 ae ce 1c e9 00 00    00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 93 </td><td class='hex'>.....sRGB.........bKGD..........</td></tr>
+<tr><td class='right'>0040</td><td class='hex'> 00 00 00 09 70 48 59 73 00 00 0b 13 00 00 0b 13    01 00 9a 9c 18 00 00 00 07 74 49 4d 45 07 d9 07 </td><td class='hex'>....pHYs.................tIME...</td></tr>
+<tr><td class='right'>0060</td><td class='hex'> 0b 0f 0a 18 7e 1b 8b b7 00 00 00 62 49 44 41 54    28 cf 63 60 18 32 80 11 99 f3 3f 2c 8c 81 81 81 </td><td class='hex'>....~......bIDAT(.c`.2....?,....</td></tr>
+<tr><td class='right'>0080</td><td class='hex'> 81 a1 c1 53 f3 3f 36 75 8d 89 8d 70 01 26 74 93    d0 34 c1 0c 46 37 08 55 23 b2 a6 86 ed d7 19 1b </td><td class='hex'>...S.?6u...p.&amp;t..4..F7.U#.......</td></tr>
+<tr><td class='right'>00a0</td><td class='hex'> b6 5f 47 71 10 32 87 05 97 1f b0 38 97 81 38 8d    db af 33 a2 19 84 db a9 e8 36 e2 b3 95 05 4b e8 </td><td class='hex'>._Gq.2.....8..8...3......6....K.</td></tr>
+<tr><td class='right'>00c0</td><td class='hex'> fd c7 e1 64 46 42 36 32 12 29 36 54 00 00 cb 15    1a dc 25 65 64 21 00 00 00 00 49 45 4e 44 ae 42 </td><td class='hex'>...dFB62.)6T......%ed!....IEND.B</td></tr>
+<tr><td class='right'>00e0</td><td class='hex'> 60 82 </td><td class='hex'>`.</td></tr>
+</table>
+</div> <!-- class=content -->
+<div class='footer'>sysphere dot org</div>
+</div> <!-- id=cgit -->
+</body>
+</html>

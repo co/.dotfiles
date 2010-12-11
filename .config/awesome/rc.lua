@@ -6,6 +6,7 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
+require("vicious")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
@@ -72,6 +73,107 @@ end
 -- {{{ Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock({ align = "right" })
+
+	
+
+cpuicon = widget({type = "imagebox" })
+cpuicon.image = image(beautiful.cpu_icon)
+
+memicon = widget({ type = "imagebox" })
+memicon.image = image(beautiful.mem_icon)
+
+upicon = widget({ type = "imagebox" })
+upicon.image = image(beautiful.up_icon)
+
+downicon = widget({ type = "imagebox" })
+downicon.image = image(beautiful.down_icon)
+
+
+
+
+memwidget = widget({ type = "textbox" }) --display free memory
+vicious.register(memwidget, vicious.widgets.mem, '<span color="'
+  .. beautiful.fg_mem_widget ..'">$1%</span>', 3)
+
+cpuwidget = widget({ type = "textbox" })
+vicious.register(cpuwidget, vicious.widgets.cpu, '<span color="'
+  .. beautiful.fg_cpu_widget ..'">$1%</span>')
+
+netwidget = widget({ type = "textbox" })
+vicious.register(netwidget, vicious.widgets.net, '<span color="'
+  .. beautiful.fg_netdn_widget ..'">${eth0 down_kb}</span> <span color="'
+  .. beautiful.fg_netup_widget ..'">${eth0 up_kb}</span>', 3)
+
+mail_icon = widget({ type = "imagebox" })
+mail_icon.image = image(beautiful.mail_icon)
+
+nomail_icon = widget({ type = "imagebox" })
+nomail_icon.image = image(beautiful.nomail_icon)
+
+--gmailwidget
+    mygmail = widget({ type = "textbox" })
+    --mygmail_t = awful.tooltip({ objects = { mygmail }, })
+    vicious.register(mygmail, vicious.widgets.gmail, 
+    function (widget, args)
+    if args["{count}"] > 0 then
+      nomail_icon.visible = false
+      mail_icon.visible = true
+      return '<span color="' .. beautiful.fg_focus .. '">' .. args["{count}"] .. '</span>'
+    else
+      mail_icon.visible = false
+      nomail_icon.visible = true
+      return ""
+    end
+    end, 10)
+      --function (widget, args)
+        --mygmail_t:set_text(args["{subject}"])
+        --return ' g: <span color="white"
+--weight="bold">'..args[1]..'</span> | '
+      --end, 10)
+
+
+pacicon = widget({ type = "imagebox" })
+pacicon.image = image(beautiful.pac_icon)
+
+clydeicon = widget({ type = "imagebox" })
+clydeicon.image = image(beautiful.clyde_icon)
+
+nopacicon = widget({ type = "imagebox" })
+nopacicon.image = image(beautiful.blue_icon)
+
+pacwidget = widget({ type = "textbox" })
+vicious.register(pacwidget, vicious.widgets.pkg,
+   function (widget, args)
+   lock = 0
+   local f = io.popen("ls /var/lib/pacman/db.lck")
+   for line in f:lines() do
+        lock = lock + 1
+   end
+
+   if lock > 0 then
+      nopacicon.visible = false
+      clydeicon.visible = false
+      pacicon.visible = true
+      return ""
+   elseif args[1] > 0 then
+      nopacicon.visible = false
+      pacicon.visible = false
+      clydeicon.visible = true
+      return '<span color="' .. beautiful.fg_pac_widget .. '">' .. args[1] .. '</span>'
+   else
+      pacicon.visible = false
+      clydeicon.visible = false
+      nopacicon.visible = true
+      return ""
+   end
+   end, 5, "Arch" )
+
+
+spacer = widget({ type = "imagebox"})
+spacer.image = image(beautiful.separator_icon)
+
+end_icon = widget({ type = "imagebox"})
+end_icon.image = image(beautiful.end_icon)
 
 -- Create a systray
 mysystray = widget({ type = "systray" })
@@ -145,7 +247,12 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
-        mytextclock,
+        mytextclock, spacer,
+        memwidget, memicon, spacer,
+        cpuwidget, cpuicon, spacer,
+        upicon, netwidget, downicon, spacer,
+        pacwidget, pacicon, clydeicon, nopacicon, spacer,
+        mygmail, nomail_icon, mail_icon, end_icon,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
@@ -292,7 +399,8 @@ awful.rules.rules = {
                      border_color = beautiful.border_normal,
                      focus = true,
                      keys = clientkeys,
-                     buttons = clientbuttons } },
+                     buttons = clientbuttons,
+                     size_hints_honor = false } },
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
     { rule = { class = "pinentry" },
