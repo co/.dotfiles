@@ -4,7 +4,8 @@
 
 theme = {}
 
-theme.font          = "Fixed 9"
+--theme.font          = "Fixed 9"
+theme.font          = "erusfont 9"
 
 theme.bg_normal     = "#262729"
 theme.bg_focus      = "#444444"
@@ -48,17 +49,17 @@ theme.awesome_icon           = "/home/co/.config/awesome/themes/default/hat.png"
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = "/home/co/.config/awesome/themes/default/submenu.png"
-theme.mem_icon = "/home/co/.config/awesome/themes/default/icons/mem.png"
-theme.separator_icon = "/home/co/.config/awesome/themes/default/icons/separator.png"
-theme.cpu_icon = "/home/co/.config/awesome/themes/default/icons/cpu.png"
-theme.up_icon = "/home/co/.config/awesome/themes/default/icons/up.png"
-theme.down_icon = "/home/co/.config/awesome/themes/default/icons/down.png"
-theme.pac_icon = "/home/co/.config/awesome/themes/default/icons/lilpac.png"
-theme.clyde_icon = "/home/co/.config/awesome/themes/default/icons/lilclyde.png"
-theme.blue_icon = "/home/co/.config/awesome/themes/default/icons/lilblue.png"
-theme.mail_icon = "/home/co/.config/awesome/themes/default/icons/mail.png"
-theme.nomail_icon = "/home/co/.config/awesome/themes/default/icons/nomail.png"
-theme.end_icon = "/home/co/.config/awesome/themes/default/icons/end.png"
+theme.mem_icon = "/home/co/.config/awesome/themes/default/icons/meml.png"
+theme.separator_icon = "/home/co/.config/awesome/themes/default/icons/separatorl.png"
+theme.cpu_icon = "/home/co/.config/awesome/themes/default/icons/cpul.png"
+theme.up_icon = "/home/co/.config/awesome/themes/default/icons/upl.png"
+theme.down_icon = "/home/co/.config/awesome/themes/default/icons/downl.png"
+theme.pac_icon = "/home/co/.config/awesome/themes/default/icons/lilpacl.png"
+theme.clyde_icon = "/home/co/.config/awesome/themes/default/icons/lilclydel.png"
+theme.blue_icon = "/home/co/.config/awesome/themes/default/icons/lilbluel.png"
+theme.mail_icon = "/home/co/.config/awesome/themes/default/icons/maill.png"
+theme.nomail_icon = "/home/co/.config/awesome/themes/default/icons/nomaill.png"
+theme.end_icon = "/home/co/.config/awesome/themes/default/icons/endl.png"
 theme.menu_height = "13"
 theme.menu_width  = "100"
 
@@ -111,4 +112,3 @@ theme.layout_dwindle = "/usr/share/awesome/themes/default/layouts/dwindlew.png"
 theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
 
 return theme
--- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:encoding=utf-8:textwidth=80
