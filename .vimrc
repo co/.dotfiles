@@ -2,6 +2,8 @@
 set nocompatible
 behave xterm
 
+au BufRead,BufNewFile *.des set syntax=levdes "crawl levdes syntayx
+
 " Needed for Syntax Highlighting and stuff
 filetype on
 filetype plugin on
@@ -20,13 +22,21 @@ set autoread
 " Who doesn't like autoindent?
 set autoindent
 
-" Spaces are better than a tab character
-set expandtab
+" Spaces are better than a tab character, not?
+"set expandtab
 set smarttab
+
+set showtabline=1
 
 " Who wants an 8 character tab?  Not me!
 set shiftwidth=3
 set softtabstop=3
+
+set cursorline " highlight current line
+"set cursorcolumn
+"Show tabs
+set list
+set listchars=tab:>-,trail:-
 
 " Cool tab completion stuff
 set wildmenu
@@ -61,7 +71,8 @@ set nohidden
 
 "Status line gnarliness
 set laststatus=2
-set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
+"set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
+set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
 
 " Automatically cd into the directory that the file is in
 autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
@@ -73,6 +84,8 @@ cmap w!! %!sudo tee > /dev/null %
 
 " This shows what you are typing as a command.  I love this!
 set showcmd
+
+set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png
 
 " Folding Stuffs
 set foldmethod=marker
@@ -89,7 +102,7 @@ set sw=3
 set tw=78
 set et
 set nu
-set nowrap
+set wrap
 set history=50
 set ruler
 "set rulerformat=%55(%{strftime('%e-%b-%Y %I:%M %p')} [%5l,%-6(%c%V%)] %P%)
@@ -99,19 +112,23 @@ set hlsearch
 set ww=<,>,[,]
 set t_Co=256
 if has('gui_running')
-    set guioptions-=T
-    set guioptions+=g
-    set guioptions-=t
-    set guioptions-=m
-    set guioptions-=L
-    set guioptions-=l
-    set guioptions-=r
-    set guioptions-=R
+    "set guioptions-=T "no Toolbar
+    "set guioptions-=t "no tearoff menu items
+    "set guioptions-=m "no menu
+    "set guioptions-=L "no scrollbar
+    "set guioptions-=l "no scrollbar
+    "set guioptions-=r "
+    "set guioptions-=R
+    set guioptions=c
+    "              ||
+    "              |+-- use simple dialogs rather than pop-ups
+    "              +  use GUI tabs, not console style tabs
+    set mousehide " hide the mouse cursor when typing
 endif
 
 
 imap <C-h> <Esc>
-colorscheme desert
+colorscheme vitamins
 
 "No sound on errors.
 set noerrorbells
