@@ -1,4 +1,5 @@
 # .zshrc
+# .zshrc
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=5000
@@ -16,6 +17,7 @@ bindkey -e
 alias -g EG='|& egrep'
 alias -g EH='|& head'
 alias -g EL='|& less'
+alias -g PL='; aplay -q ~/.sound/mobd.wav '
 alias -g ET='|& tail'
 PS1=$'%{\e[1;36m%}[%{\e[1;34m%}%~%{\e[1;36m%}]%{\e[0;33m%}€%{\e[0m%} '
 
@@ -27,7 +29,9 @@ PS1=$'%{\e[1;36m%}[%{\e[1;34m%}%~%{\e[1;36m%}]%{\e[0;33m%}€%{\e[0m%} '
 
 PATH=$PATH:/home/co/bin:.
 alias sv="sudo vim"
-alias c="sudo clyde"
+alias c="clear"
+alias t="urxvt &"
+alias die="killall"
 alias hist="history | head"
 alias vi="vim"
 alias pc="pcmanfm"
@@ -49,6 +53,8 @@ alias mu="ncmpcpp"
 alias rt='rtorrent'
 alias kaz='kazehakase'
 alias th='thunar'
+alias wine='schroot -pqd "$(pwd)" -- wine'
+
 #nada login
 alias kth='ssh coer@my.nada.kth.se'
 #crawl
@@ -60,32 +66,4 @@ alias office="soffice"
 export VISUAL=vim
 export PAGER=less
 export MANPAGER=less
-
-
-alias t="todo.sh"
-
-
-#LOLZSH!!1!
-# LOL!!1
-
-alias wtf='dmesg'
-alias onoz='sudo cat /var/log/errors.log'
-alias rtfm='man'
-
-alias moar='less'
-
-alias icanhas='mkdir'
-alias donotwant='rm -i'
-alias dowant='cp'
-alias gtfo='mv'
-
-alias hai='cd'
-alias plz='pwd'
-
-alias inur='locate'
-
-alias nomz='ps -aux'
-alias nomnom='killall'
-
-alias cya='reboot'
-alias kthxbai='halt'
+stty stop ""

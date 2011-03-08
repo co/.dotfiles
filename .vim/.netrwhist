@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/co/kth/krypto/hw1/aes'
+let g:netrw_dirhist_2='/home/co/kth/ipop'
+let g:netrw_dirhist_3='/etc/pacman.d'
+let g:netrw_dirhist_4='/home/co/kth/pps/hw3/pps'
+let g:netrw_dirhist_5='/home/co/kth/pps/hw4'
+let g:netrw_dirhist_6='/home/co/kth/pps/hw2'

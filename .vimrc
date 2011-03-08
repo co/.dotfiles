@@ -1,9 +1,9 @@
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "co's .vimrc, full of epic awesomeness.
 "Made with great love, by co.
 "
 "Last update: Sun Feb 20 18:38:34 CET 2011 (:r! date)
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Time to get awesome. Full power activated.
 set nocompatible
 behave xterm
@@ -11,14 +11,14 @@ behave xterm
 " Change the terminal's title.
 set title
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Essential
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Cool tab completion stuff
 set wildmenu
 set wildmode=list:longest,full
 
-" Got backspace? now it can do everything.
+" Got backspace? Now it can do everything.
 set backspace=2
 
 " Hide buffers instead of closing them this.
@@ -27,12 +27,22 @@ set hidden
 " Enforces line width.
 set textwidth=80
 
-" Wraps lines when they get too long.
-set wrap
+" Wraps lines when they get too long. Not as nice as one might think.
+set nowrap
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+"maps <leader> to , very useful for maping.
+let mapleader=","
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Script specific
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " File specific
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype on
 filetype plugin on
 filetype indent on
@@ -40,9 +50,9 @@ filetype indent on
 " Enable filetype plugin
 set autoread
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntax highlighting
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 syntax on
 colorscheme molokai "Nice and dark.
@@ -53,9 +63,9 @@ set t_Co=256
 "crawl levdes syntayx highlighting.
 au BufRead,BufNewFile *.des set syntax=levdes
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Visual feedback
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set show matching parenthesis.
 set showmatch
 
@@ -82,9 +92,9 @@ set ruler
 set laststatus=2
 set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Backup
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " A place for everything and everything in its place.
 set backup
 set backupdir=~/.vim/backup
@@ -95,9 +105,9 @@ set undofile
 set undodir=~/.vim/undo
 set undolevels=1000
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Who doesn't like autoindent?
 set autoindent
 
@@ -118,9 +128,9 @@ set nojoinspaces
 " Automagically imitates the indent of the last line.
 set smartindent
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Search
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ignoring case is a fun trick.
 set ignorecase
 
@@ -134,9 +144,9 @@ set incsearch
 " Highlight things that we find with the search.
 set hlsearch
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " No Press ENTER or type command to continue.
 set shortmess=atI
 
@@ -168,41 +178,28 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key bindings
-""""""""""""""""""""""""""""""""""""""""""""""""
-"maps <leader> to , very useful for maping.
-let mapleader=","
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Ctrl+h -> <Esc>
 imap <C-h> <Esc>
+nmap <C-h> :
 
 " Map space to / and c-space to ?
 map <space> /
-map <C-space> :% "not working?
+nmap <leader><space> :%s/
 
 " Map Ctrl+d till x i insert
 imap <C-d> <BS>
 
-" Dvorak it!
-no d h
-no h j
-no t k
-no n l
-no - s
-no _ S
-no s :
-no S :
-no j d
-no l n
-no L N
 no zh zj
 no zt zk
 
 " With added benefits.
 no - $
 no _ 0
-no N <C-w><C-w>
+"no N <C-w><C-w>
 no H 8<Down>
 no T 8<Up>
 no D <C-w><C-r>
@@ -221,24 +218,23 @@ nmap Q gqap
 " Shortcut to make.
 nmap mk :make<CR>
 
-" No you are not using arrow keys!
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
-" Remap h and t to act as expected when used on long, wrapped, lines.
-nnoremap h gj
-nnoremap t gk
-
-" Use ,j (or ,jj or ,jh or 20,jj) to delete a line without adding it to the.
+" Use ,d (or ,dd or ,dh or 20,dd) to delete a line without adding it to the.
 " Yanked stack (also, in visual mode).
-nmap <silent> <leader>j "_j
-vmap <silent> <leader>j "_j
+nmap <silent> <leader>d "_d
+vmap <silent> <leader>d "_d
 
 " w!! -> sudo save.
 cmap w!! %!sudo tee > /dev/null %
 
+"Quick Switch.
+nmap <leader>h :b#<CR>
+
 "Time to tune my vimrc.
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+"Keybind for the gundo plugin.
+nnoremap <F5> :GundoToggle<CR>
+
+"Toggle spellcheck.
+nnoremap <F6> ::set nospell!<CR>
