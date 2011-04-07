@@ -19,6 +19,7 @@ alias -g EH='|& head'
 alias -g EL='|& less'
 alias -g PL='; aplay -q ~/.sound/mobd.wav '
 alias -g ET='|& tail'
+#PS1=$'%{\e[1;36m%}[%{\e[1;34m%}%~%{\e[1;36m%}]%{\e[0;33m%}€%{\e[0m%} '
 PS1=$'%{\e[1;36m%}[%{\e[1;34m%}%~%{\e[1;36m%}]%{\e[0;33m%}€%{\e[0m%} '
 
 
@@ -64,6 +65,7 @@ alias hs="cat /home/co/.histfile | grep"
 alias office="soffice"
 
 export VISUAL=vim
-export PAGER=less
-export MANPAGER=less
+export PAGER="vim -"
+export MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -"
+export DEITY="fsm"
 stty stop ""
