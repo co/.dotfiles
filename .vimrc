@@ -55,7 +55,19 @@ set autoread
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 syntax on
-colorscheme molokai "Nice and dark.
+"Dark colorschemes
+colorscheme molokai      "Neon.
+"colorscheme twilight256 "Earthy.
+
+"Grey colorschemes
+"colorscheme codeburn    "Nice on the eyes.
+"colorscheme zenesque    "Only gray.
+
+"Light colorschemes
+"colorscheme bclear      "White and colorful.
+
+"Colorful colorschemes
+"colorscheme solarized
 
 "Number of colors (256 max).
 set t_Co=256
@@ -159,7 +171,7 @@ set autochdir
 set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png,*.swp,*.class
 
 " Folding Stuffs automaticly.
-set foldmethod=marker
+set foldmethod=indent
 
 " History size.
 set history=1000
@@ -185,6 +197,7 @@ set t_vb=
 " Ctrl+h -> <Esc>
 imap <C-h> <Esc>
 nmap <C-h> :
+vmap <C-h> <Esc>
 
 " Map space to / and c-space to ?
 map <space> /
