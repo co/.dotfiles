@@ -1,19 +1,14 @@
 # .zshrc
-# .zshrc
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=5000
 SAVEHIST=10000
 setopt appendhistory autocd nomatch
 unsetopt beep extendedglob
 bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-#zstyle :compinstall filename '/home/co/.zshrc'
 
-#autoload -Uz compinit
-#compinit
-# End of lines added by compinstall
+autoload -Uz compinit
+compinit
+
 alias -g EG='|& egrep'
 alias -g EH='|& head'
 alias -g EL='|& less'
@@ -66,6 +61,6 @@ alias office="soffice"
 
 export VISUAL=vim
 export PAGER="vim -"
-export MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -"
+export MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -c' colorscheme codeburn' -"
 export DEITY="fsm"
 stty stop ""
