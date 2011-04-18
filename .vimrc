@@ -170,8 +170,8 @@ set autochdir
 
 set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png,*.swp,*.class
 
-" Folding Stuffs automaticly.
-set foldmethod=indent
+" Lets you define the folds.
+set foldmethod=marker
 
 " History size.
 set history=1000
