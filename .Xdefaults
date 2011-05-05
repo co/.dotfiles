@@ -2,13 +2,16 @@
    urxvt*depth: 32
    URxvt.scrollstyle:      plain
    URxvt.secondaryScroll:  false
-   URxvt.background:       rgba:2424/2424/2424/0000
+URxvt.background:       rgba:2424/2424/2424/5555
 !   URxvt.foreground:       #eeeeee
    urxvt*scrollBar:        false
-!   URxvt*transparent:true
+   URxvt*transparent:true
 !
-URxvt*transparent: true
-URxvt*shading: 20
+!URxvt*inheritPixmap: true
+!URxvt*tintColor: white
+!URxvt*shading: 40
+!URxvt*transparent: true
+!URxvt*shading: 20
 !URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=13
 
 !bra men stor
@@ -18,24 +21,25 @@ URxvt*shading: 20
 !URxvt*font: 8x13
 
 URxvt*font: -erus-erusfont-medium-r-normal--11-80-100-100-c-60-iso10646-1
+URxvt*font: -erus-erusfont-medium-r-normal--11-80-100-100-c-60-iso10646-1
 !URxvt*boldFont: -erus-erusfont-bold-r-normal--11-80-100-100-c-60-iso10646-1
 !URxvt*boldFont: 8x13
 URxvt*italicFont: 5x8
 
 urxvt.xftAntialias: false
 urxvt.jumpScroll: true
-urxvt.tintColor: white
+!urxvt.tintColor: white
 urxvt.internalBorder: 0
 urxvt.cursorBlink: false
 !urxvt.cursorColor: #E2BAF1
 !urxvt.cursorColor: #ff9900
 !urxvt.cursorColor2: #000000
 !urxvt.background: #262729
-urxvt.foreground: light grey
-urxvt.colorBD: #ffffff
-urxvt.colorIT: #bbbbbb
-urxvt.colorUL: #999999
-urxvt.underlineColor: #999999
+!urxvt.foreground: light grey
+!urxvt.colorBD: #ffffff
+!urxvt.colorIT: #bbbbbb
+!urxvt.colorUL: #999999
+!urxvt.underlineColor: #999999
 urxvt.borderless: true
 
 !URxvt*font: -*-terminus-medium-r-*-*-14-120-*-*-*-*-*-*
@@ -73,6 +77,7 @@ urxvt.borderless: true
 
 
 
+!#include "/home/co/.colorscheme/solarized"
 
 !bclear style
 

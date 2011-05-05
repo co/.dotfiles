@@ -5,6 +5,9 @@ SAVEHIST=10000
 setopt appendhistory autocd nomatch
 unsetopt beep extendedglob
 bindkey -e
+#autoload edit-command-line
+#zle -N edit-command-line
+#bindkey '^i' edit-command-line
 
 autoload -Uz compinit
 compinit
@@ -50,6 +53,9 @@ alias rt='rtorrent'
 alias kaz='kazehakase'
 alias th='thunar'
 alias wine='schroot -pqd "$(pwd)" -- wine'
+
+#silly stuff
+alias what_is_a_man='echo "a miserable little pile of secrets! \nBut enough talk... Have at you!"'
 
 #nada login
 alias kth='ssh coer@my.nada.kth.se'

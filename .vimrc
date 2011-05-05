@@ -58,6 +58,7 @@ syntax on
 "Dark colorschemes
 colorscheme molokai      "Neon.
 "colorscheme twilight256 "Earthy.
+"colorscheme xoria256    "Less contrast.
 
 "Grey colorschemes
 "colorscheme codeburn    "Nice on the eyes.
@@ -67,7 +68,7 @@ colorscheme molokai      "Neon.
 "colorscheme bclear      "White and colorful.
 
 "Colorful colorschemes
-"colorscheme solarized
+"colorscheme solarized   "Two variations.
 
 "Number of colors (256 max).
 set t_Co=256
@@ -169,9 +170,10 @@ set mouse=a
 set autochdir
 
 set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png,*.swp,*.class
+set iskeyword=@,48-57,_,å,ä,ö,Å,Ä,Ö
 
-" Lets you define the folds.
-set foldmethod=marker
+" Folding Stuffs automaticly.
+set foldmethod=syntax
 
 " History size.
 set history=1000
@@ -190,6 +192,8 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
+" Sets formater program.
+:set formatprg=par
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -212,10 +216,6 @@ no zt zk
 " With added benefits.
 no - $
 no _ 0
-"no N <C-w><C-w>
-no H 8<Down>
-no T 8<Up>
-no D <C-w><C-r>
 
 "It's more useful to use ' instead of `.
 nnoremap ' `
