@@ -13,6 +13,9 @@ done
 #create symbolic links for directories.
 for dir in $(find -maxdepth 1 -mindepth 1 -type d -name '.*' -printf "%f\n")
 do
+    if [[ "$dir" == .git ]]; then #Ignore the .git directory
+    continue
+    fi
     ln -v -n -s "$(pwd)/$dir" "$HOME/$dir" 2> /dev/null ||
         rm -f -r "$HOME/$dir" && ln -n -v -s "$(pwd)/$dir" "$HOME/$dir"
 done
