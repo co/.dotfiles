@@ -1,11 +1,10 @@
 ## Runs when x starts (.xinitrc)
 #feh --bg-center /home/co/co/pics/wallpaper/d1.png
 #setxkbmap se -variant svdvorak
-## Caps <- Ctrl
 feh --bg-scale /home/co/co/pics/wp/min/Monocle_gray.png &
 #
-#xmodmap -e 'keycode 66 = Control_L'
-#xmodmap -e 'clear Lock'
-#xmodmap -e 'add Control = Control_L'
+## Caps <- Ctrl
+xmodmap -e 'keycode 66 = Control_L'
+xmodmap -e 'clear Lock'
+xmodmap -e 'add Control = Control_L'
 sleep 0.3
-xmodmap /home/co/.Xmodmap
