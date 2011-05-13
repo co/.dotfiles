@@ -65,6 +65,7 @@ alias netcrawl='echo 'joshua' && ssh joshua@crawl.akrasiac.org'
 alias hs="cat /home/co/.histfile | grep"
 alias office="soffice"
 
+export EDITOR=vim
 export VISUAL=vim
 export PAGER="vim -"
 export MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -c' colorscheme codeburn' -"
