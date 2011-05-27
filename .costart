@@ -1,7 +1,7 @@
 ## Runs when x starts (.xinitrc)
 #feh --bg-center /home/co/co/pics/wallpaper/d1.png
     setxkbmap se -variant svdvorak
-feh --bg-scale /home/co/co/pics/wp/min/Monocle_gray.png &
+feh --bg-fill /home/co/co/pics/wp/min/Monocle_gray.png &
 
 #
 ## Caps <- Ctrl
@@ -15,4 +15,4 @@ xset +fp /usr/share/fonts/local
 xset fp rehash
 
 #starts mpd
-mpd ~/.mpd/mpd.conf
+mpd ~/.mpd/mpd.conf 2> /dev/null
