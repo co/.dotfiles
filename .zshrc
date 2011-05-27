@@ -37,6 +37,7 @@ alias pc="pcmanfm"
 alias www="kazehakase"
 alias ls='ls --color=auto'
 alias la="ls -a"
+alias s="startx"
 #Gvim med menyer om avstängd i .vimrc (hoppar över alla .vimrc)
 alias gvimm="gvim -u ''"
 # Lets you search through all available packages simply using 'pacsearch packagename'
