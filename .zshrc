@@ -17,41 +17,31 @@ alias -g EH='|& head'
 alias -g EL='|& less'
 alias -g PL='; aplay -q ~/.sound/mobd.wav '
 alias -g ET='|& tail'
-#PS1=$'%{\e[1;36m%}[%{\e[1;34m%}%~%{\e[1;36m%}]%{\e[0;33m%}€%{\e[0m%} '
+
 PS1=$'%{\e[1;36m%}[%{\e[1;34m%}%~%{\e[1;36m%}]%{\e[0;33m%}€%{\e[0m%} '
 
-
-#xtermcontrol #snygga färger, ställ in på .xtermcontrol ! bara i xterm duh.
-
 #less on steroids
- LESSOPEN="|lesspipe.sh %s"; export LESSOPEN
+LESSOPEN="|lesspipe.sh %s"; export LESSOPEN
 
 PATH=$PATH:/home/co/bin:.
 alias sv="sudo vim"
 alias c="clear"
-alias t="urxvt &"
-alias die="killall"
-alias hist="history | head"
+alias n="urxvt &"
 alias vi="vim"
-alias pc="pcmanfm"
-alias www="kazehakase"
 alias ls='ls --color=auto'
 alias la="ls -a"
-#Gvim med menyer om avstängd i .vimrc (hoppar över alla .vimrc)
-alias gvimm="gvim -u ''"
+alias grep="grep --color=auto"
 # Lets you search through all available packages simply using 'pacsearch packagename'
-alias pacsearch="clyde -Sl | cut -d' ' -f2 | grep "
-alias grep="grep --color=auto"  
+alias pacs="yaourt -Sl | cut -d' ' -f2 | grep "
 # sudo pacman -Syu by typing pacup (sudo must be installed and configured first)
-alias pacup="sudo clyde -Syu"
+alias pacup="sudo yaourt -Syu"
 # sudo pacman -S by typing pac
-alias pac="sudo clyde -S"
+alias pac="yaourt -S"
+# colorized pacman
+alias pacman="pacman-color"
 # colorized pacman output with pacs alias:
-alias pacs="pacsearch"
 alias mu="ncmpcpp"
 alias rt='rtorrent'
-alias kaz='kazehakase'
-alias th='thunar'
 alias wine='schroot -pqd "$(pwd)" -- wine'
 
 #silly stuff
@@ -59,14 +49,16 @@ alias what_is_a_man='echo "a miserable little pile of secrets! \nBut enough talk
 
 #nada login
 alias kth='ssh coer@my.nada.kth.se'
-#crawl
+
+#netcrawl
 alias netcrawl='echo 'joshua' && ssh joshua@crawl.akrasiac.org'
+
 # search in history
 alias hs="cat /home/co/.histfile | grep"
 alias office="soffice"
 
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR="vim"
+export VISUAL="vim"
 export PAGER="vim -"
 export MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -c' colorscheme codeburn' -"
 export DEITY="fsm"
