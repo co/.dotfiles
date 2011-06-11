@@ -16,3 +16,18 @@
 [submodule ".vim/bundle/repeat"]
 	path = .vim/bundle/repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule ".vim/bundle/codeburn"]
+	path = .vim/bundle/codeburn
+	url = https://github.com/vim-scripts/codeburn.git
+[submodule ".vim/bundle/molokai"]
+	path = .vim/bundle/molokai
+	url = https://github.com/tomasr/molokai.git
+[submodule ".vim/bundle/neverland"]
+	path = .vim/bundle/neverland
+	url = https://github.com/trapd00r/neverland-vim-theme.git
+[submodule ".vim/bundle/bclear"]
+	path = .vim/bundle/bclear
+	url = https://github.com/vim-scripts/bclear.git
+[submodule ".vim/bundle/pyte"]
+	path = .vim/bundle/pyte
+	url = git://github.com/therubymug/vim-pyte.git

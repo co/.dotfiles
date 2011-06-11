@@ -2,13 +2,13 @@
 urxvt*depth: 32
 URxvt.scrollstyle:      plain
 URxvt.secondaryScroll:  false
-URxvt.background:       rgba:2424/2424/2424/5555
+URxvt.background:       rgb:29/29/26
 urxvt*scrollBar:        false
 !
 !URxvt*inheritPixmap: true
 !URxvt*tintColor: white
-URxvt*shading: 20
-URxvt*transparent: true
+!URxvt*shading: 20
+!URxvt*transparent: true
 !URxvt*shading: 20
 !URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=13
 

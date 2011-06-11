@@ -1,10 +1,18 @@
 ## Runs when x starts (.xinitrc)
 #feh --bg-center /home/co/co/pics/wallpaper/d1.png
-#setxkbmap se -variant svdvorak
-feh --bg-scale /home/co/co/pics/wp/min/Monocle_gray.png &
+    setxkbmap se -variant svdvorak
+feh --bg-fill /home/co/co/pics/wp/min/Monocle_gray.png &
+
 #
 ## Caps <- Ctrl
 xmodmap -e 'keycode 66 = Control_L'
 xmodmap -e 'clear Lock'
 xmodmap -e 'add Control = Control_L'
 sleep 0.3
+
+#updates fonts.
+xset +fp /usr/share/fonts/local
+xset fp rehash
+
+#starts mpd
+mpd ~/.mpd/mpd.conf 2> /dev/null
