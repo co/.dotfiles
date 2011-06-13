@@ -44,6 +44,10 @@ alias mu="ncmpcpp"
 alias rt='rtorrent'
 alias wine='schroot -pqd "$(pwd)" -- wine'
 
+#feh aliases
+alias rfs="feh --full-screen --hide-pointer --randomize"
+alias fs="feh  --full-screen --hide-pointer --sort filename"
+
 #silly stuff
 alias what_is_a_man='echo "a miserable little pile of secrets! \nBut enough talk... Have at you!"'
 
