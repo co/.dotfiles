@@ -198,7 +198,7 @@ set ebind     = @mode_bind global,-insert
 @ebind  <Tab>        = event START_COMPLETION
 # Readline-ish bindings.
 @ebind  <Ctrl>w      = event KEYCMD_STRIP_WORD \ -./&?=
-@ebind  <Ctrl>u      = event SET_KEYCMD
+#@ebind  <Ctrl>u      = event SET_KEYCMD
 @ebind  <Ctrl>a      = event SET_CURSOR_POS 0
 @ebind  <Ctrl>e      = event SET_CURSOR_POS -1
 
@@ -232,8 +232,8 @@ set ebind     = @mode_bind global,-insert
 @cbind  l            = scroll horizontal 20
 @cbind  <Page_Up>    = scroll vertical -100%
 @cbind  <Page_Down>  = scroll vertical 100%
-@cbind  <Ctrl>f      = scroll vertical 100%
-@cbind  <Ctrl>b      = scroll vertical -100%
+@cbind  <Ctrl>d      = scroll vertical 100%
+@cbind  <Ctrl>u      = scroll vertical -100%
 @cbind  <<           = scroll vertical begin
 @cbind  >>           = scroll vertical end
 @cbind  <Home>       = scroll vertical begin
@@ -270,10 +270,22 @@ set ebind     = @mode_bind global,-insert
 @cbind  <Ctrl>p = hardcopy
 
 # Web searching binds
-@cbind  gg<Google:>_         = uri http://www.google.com/search?q=\@<encodeURIComponent(%r)>\@
+@cbind  gg<Google:>_         = uri http://duckduckgo.com/?q=!g\ %s
 @cbind  ddg<DuckDuckGo:>_    = uri http://duckduckgo.com/?q=%s
 @cbind  \\awiki<Archwiki:>_  = uri http://wiki.archlinux.org/index.php/Special:Search?search=\@<encodeURIComponent(%r)>\@&go=Go
 @cbind  \\wiki<Wikipedia:>_  = uri http://en.wikipedia.org/w/index.php?title=Special:Search&search=\@<encodeURIComponent(%r)>\@&go=Go
+
+@cbind  gra         = uri http://reddit.com/r/atheism
+@cbind  grbb         = uri http://reddit.com/r/electronicmusic
+@cbind  grpr         = uri http://reddit.com/r/programming
+@cbind  grdw         = uri http://reddit.com/r/doctorwho
+@cbind  grfu         = uri http://reddit.com/r/fffffffuuuuuuuuuuuu/
+@cbind  grv         = uri http://reddit.com/r/vim/
+@cbind  grg         = uri http://reddit.com/r/geek/
+@cbind  grt         = uri http://reddit.com/r/technology/
+@cbind  grr<reddit:>_         = uri http://reddit.com/r/%s
+
+@cbind  gf<4chan:>_         = uri http://4chan.org/%s
 
 # Handy binds
 # Set function shortcut
@@ -335,12 +347,12 @@ set ebind     = @mode_bind global,-insert
 @cbind  u  = spawn @scripts_dir/load_url_from_bookmarks.sh
 
 # Temporary bookmarks
-@cbind  <Ctrl>d  = spawn @scripts_dir/insert_temp.sh
-@cbind  D        = spawn @scripts_dir/load_url_from_temps.sh
+#@cbind  <Ctrl>d  = spawn @scripts_dir/insert_temp.sh
+#@cbind  D        = spawn @scripts_dir/load_url_from_temps.sh
 
 # Link following (similar to vimperator and konqueror)
 # Set custom keys you wish to use for navigation. Some common examples:
-set follow_hint_keys = hutenosa
+set follow_hint_keys = hutedinosagpc.r,
 #set follow_hint_keys = qwerty
 #set follow_hint_keys = asdfghjkl;
 #set follow_hint_keys = thsnd-rcgmvwb/;789aefijkopquxyz234
