@@ -74,8 +74,8 @@ bindkey = [u]  CMD_TARGET_SELECT
 
 morgue_dir = /home/co/.crawldir
 save_dir = /home/co/.crawldir
-tile_window_width = 1024
-tile_window_height = 600
+tile_window_width = 1920
+tile_window_height = 1200
 #tile_window_width = 0
 #tile_window_height = 0
 tile_full_screen = false

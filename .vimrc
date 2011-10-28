@@ -10,6 +10,46 @@ behave xterm
 
 " Change the terminal's title.
 set title
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+ filetype off                   " required!
+
+ set rtp+=~/.vim/bundle/vundle/
+ call vundle#rc()
+
+ " let Vundle manage Vundle
+ Bundle 'gmarik/vundle'
+
+ " My Bundles here:
+ "
+ " original repos on github
+ Bundle 'tpope/vim-fugitive'
+ Bundle 'tpope/surround'
+ Bundle 'tpope/repeat'
+ Bundle 'vim-scripts/Gundo'
+
+ " colorschemes
+ Bundle 'altercation/vim-colors-solarized'
+ Bundle 'tomasr/molokai'
+ Bundle 'vim-scripts/bclear'
+
+ " file specific
+ Bundle 'vim-scripts/OmniCppComplete'
+
+ "Examples:
+ " vim-scripts repos
+ "Bundle 'FuzzyFinder'
+ " non github repos
+ "Bundle 'git://git.wincent.com/command-t.git'
+ " ...
+filetype plugin indent on     " required! 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Filetype
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype on
+filetype plugin on
+filetype indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Essential
@@ -40,12 +80,6 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" File specific
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-filetype on
-filetype plugin on
-filetype indent on
 
 " Enable filetype plugin
 set autoread
@@ -198,10 +232,11 @@ set t_vb=
 " Key bindings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"use Ctrl+C instead
 " Ctrl+h -> <Esc>
-imap <C-h> <Esc>
-nmap <C-h> :
-vmap <C-h> <Esc>
+"imap <C-h> <Esc>
+"nmap <C-h> :
+"vmap <C-h> <Esc>
 
 " Map space to / and c-space to ?
 map <space> /
@@ -251,3 +286,6 @@ nnoremap <F5> :GundoToggle<CR>
 
 "Toggle spellcheck.
 nnoremap <F6> ::set nospell!<CR>
+set shell=/bin/zsh
+
+
