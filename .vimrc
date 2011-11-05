@@ -2,7 +2,7 @@
 "co's .vimrc, full of epic awesomeness.
 "Made with great love, by co.
 "
-"Last update: Sun Feb 20 18:38:34 CET 2011 (:r! date)
+"Last update: Sat Nov  5 20:47:18 CET 2011 (:r! date)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Time to get awesome. Full power activated.
 set nocompatible
@@ -28,9 +28,12 @@ set title
  Bundle 'tpope/surround'
  Bundle 'tpope/repeat'
  Bundle 'vim-scripts/Gundo'
+ Bundle 'vim-scripts/taglist.vim'
+ Bundle 'vim-scripts/YankRing.vim'
+ Bundle 'msanders/snipmate.vim'
+ Bundle 'vim-scripts/AutoComplPop'
 
  " colorschemes
- Bundle 'altercation/vim-colors-solarized'
  Bundle 'tomasr/molokai'
  Bundle 'vim-scripts/bclear'
 
@@ -43,7 +46,7 @@ set title
  " non github repos
  "Bundle 'git://git.wincent.com/command-t.git'
  " ...
-filetype plugin indent on     " required! 
+filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Filetype
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -76,10 +79,9 @@ let mapleader=","
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Script specific
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
+"filetype off
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#helptags()
 
 " Enable filetype plugin
 set autoread
@@ -91,11 +93,14 @@ syntax enable
 syntax on
 "Dark colorschemes
 colorscheme molokai      "Neon.
+"colorscheme two2tango
 "colorscheme twilight256 "Earthy.
 "colorscheme xoria256    "Less contrast.
 
 "Grey colorschemes
 "colorscheme codeburn    "Nice on the eyes.
+"colorscheme darkspectrum
+"colorscheme no_quarter
 "colorscheme zenesque    "Only gray.
 
 "Light colorschemes
@@ -111,7 +116,7 @@ set t_Co=256
 au BufRead,BufNewFile *.des set syntax=levdes
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Visual feedback
+" Vsual feedback
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set show matching parenthesis.
 set showmatch
@@ -281,11 +286,12 @@ nmap <leader>h :b#<CR>
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+"Keybind for the taglist plugin.
+nnoremap <F4> :TlistToggle<CR>
+
 "Keybind for the gundo plugin.
 nnoremap <F5> :GundoToggle<CR>
 
 "Toggle spellcheck.
 nnoremap <F6> ::set nospell!<CR>
 set shell=/bin/zsh
-
-
