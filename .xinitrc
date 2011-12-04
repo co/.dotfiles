@@ -13,4 +13,4 @@ urxvt &
 #exec xmonad
 #exec pekwm
 #exec openbox
-exec awesome --config  ~/.awesomerc
+exec awesome --config  ~/.config/awesome/rc.lua
