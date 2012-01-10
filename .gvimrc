@@ -1,3 +1,3 @@
-set guifont=Fixed\ 13
-call togglebg#map("<F4>")
-"set guifont=erusfont\ 13
+set guifont=FreeMono\ 12
+colorscheme proton
+
