@@ -1,6 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "co's .vimrc, full of epic awesomeness.
-"Made with great love, by co.
+"Made with great love by co.
 "
 "Last update: Sat Nov  5 20:47:18 CET 2011 (:r! date)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -37,15 +37,17 @@ set title
  " colorschemes
  Bundle 'tomasr/molokai'
  Bundle 'vim-scripts/bclear'
+ Bundle 'therubymug/vim-pyte'
 
  " file specific
- Bundle 'vim-scripts/OmniCppComplete'
+Bundle 'vim-scripts/OmniCppComplete'
+"Bundle 'Rip-Rip/clang_complete'
+"Bundle 'vim-scripts/Vim-JDE'
 
  "Examples:
  " vim-scripts repos
  "Bundle 'FuzzyFinder'
  " non github repos
- "Bundle 'git://git.wincent.com/command-t.git'
  " ...
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -54,6 +56,7 @@ filetype plugin indent on     " required!
 filetype on
 filetype plugin on
 filetype indent on
+"set ofu=syntaxcomplete#Complete
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Essential
@@ -86,6 +89,7 @@ let mapleader=","
 
 " Enable filetype plugin
 set autoread
+let g:vimwiki_list = [{'path': '~/notes/wiki/'}]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntax highlighting
@@ -122,7 +126,7 @@ au BufRead,BufNewFile *.des set syntax=levdes
 " Set show matching parenthesis.
 set showmatch
 
-" Line Numbers PWN!
+" Line Numbers are Essential.
 set number
 
 " Highlight current line.
@@ -130,7 +134,7 @@ set cursorline
 
 "Show tabs and spaces.
 set list
-set listchars=tab:>-,trail:·
+set listchars=tab:\¦\ ,trail:·
 
 "Toggle show tabs and spaces.
 nmap <silent> <leader>s :set nolist!<CR>
@@ -165,7 +169,7 @@ set undolevels=1000
 set autoindent
 
 " Spaces are better than a tab character.
-set expandtab
+"set expandtab
 set smarttab
 
 " Who wants an 8 character tab?  Not me!
@@ -196,6 +200,25 @@ set incsearch
 
 " Highlight things that we find with the search.
 set hlsearch
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tags/OmniComplete
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tags+=~/.vim/tags/cpp
+map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+" OmniCppComplete
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+" automatically open and close the popup menu / preview window
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+set completeopt=menuone,menu,longest,preview
+au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
@@ -245,8 +268,8 @@ set t_vb=
 "vmap <C-h> <Esc>
 
 " Map space to / and c-space to ?
-map <space> /
-nmap <leader><space> :%s/
+nmap <space> za
+nmap <leader><space> zM
 
 " Map Ctrl+d till x i insert
 imap <C-d> <BS>
@@ -295,4 +318,6 @@ nnoremap <F5> :GundoToggle<CR>
 
 "Toggle spellcheck.
 nnoremap <F6> ::set nospell!<CR>
+map <C-F12> :!ctags -R --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
+
 set shell=/bin/zsh
