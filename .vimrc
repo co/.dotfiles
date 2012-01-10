@@ -32,6 +32,7 @@ set title
  Bundle 'vim-scripts/YankRing.vim'
  Bundle 'msanders/snipmate.vim'
  Bundle 'vim-scripts/AutoComplPop'
+ Bundle 'vim-scripts/a.vim'
 
  " colorschemes
  Bundle 'tomasr/molokai'
