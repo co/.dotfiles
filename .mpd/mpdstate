@@ -1,39 +1,164 @@
-sw_volume: 100
+sw_volume: 98
 audio_device_state:1:default detected output
 state: pause
-current: 2
-time: 67
-random: 1
-repeat: 0
+current: 21
+time: 5
+random: 0
+repeat: 1
 single: 0
 consume: 0
 crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: nan
 playlist_begin
-0:Good Stuff/Detectivbyrån/e18/01-detektivbyrån-e18.mp3
-1:Good Stuff/Detectivbyrån/e18/02-detektivbyrån-hemvägen.mp3
-2:Good Stuff/Detectivbyrån/e18/03-detektivbyrån-nattöppet.mp3
-3:Good Stuff/Detectivbyrån/e18/04-detektivbyrån-monster.mp3
-4:Good Stuff/Detectivbyrån/e18/05-detektivbyrån-dansbanan.mp3
-5:Good Stuff/Detectivbyrån/e18/06-detektivbyrån-granmon.mp3
-6:Good Stuff/Detectivbyrån/e18/07-detektivbyrån-vänerhavet.mp3
-7:Good Stuff/Detectivbyrån/e18/08-detektivbyrån-lyckans_undulat.mp3
-8:Good Stuff/Detectivbyrån/e18/09-detektivbyrån-hem_ljuva_hem.mp3
-9:Good Stuff/Detectivbyrån/e18/10-detektivbyrån-home_sweet_home.mp3
-10:Good Stuff/Detectivbyrån/e18/11-detektivbyrån-laka-koffa.mp3
-11:Good Stuff/Detectivbyrån/wermland/01-detektivbyran-om_du_moter_varg.mp3
-12:Good Stuff/Detectivbyrån/wermland/02-detektivbyran-karlekens_alla_farjor.mp3
-13:Good Stuff/Detectivbyrån/wermland/03-detektivbyran-honky_tonk_of_wermland.mp3
-14:Good Stuff/Detectivbyrån/wermland/04-detektivbyran-rymden_i_en_lada.mp3
-15:Good Stuff/Detectivbyrån/wermland/05-detektivbyran-generation_celebration.mp3
-16:Good Stuff/Detectivbyrån/wermland/06-detektivbyran-life-universe.mp3
-17:Good Stuff/Detectivbyrån/wermland/07-detektivbyran-neonland.mp3
-18:Good Stuff/Detectivbyrån/wermland/08-detektivbyran-hus_vid_havet.mp3
-19:Good Stuff/Detectivbyrån/wermland/09-detektivbyran-partyland.mp3
-20:Good Stuff/Detectivbyrån/wermland/10-detektivbyran-camping.mp3
-21:Good Stuff/Detectivbyrån/wermland/11-detektivbyran-sista_tryckaren.mp3
-22:Good Stuff/Detectivbyrån/wermland/12-detektivbyran-en_annan_typ_av_disco.mp3
-23:Good Stuff/Detectivbyrån/wermland/13-detektivbyran-dygnet_runt.mp3
-24:Good Stuff/Detectivbyrån/wermland/14-detektivbyran-054.mp3
+0:Electronic/KEYGENMUSiC MusicPack/CiM/CiM - Cafe Manila 8.6.4 crk.xm
+1:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/19 Shunsuke Kida _ Armor Spider.mp3
+2:Electronic/KEYGENMUSiC MusicPack/CORE/CORE - Anfibia Deskman 8.1.1 kg.xm
+3:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - Reflexive kg.xm
+4:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - Falco Software Products September 2008 kg.xm
+5:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M13_Ceaseless Discharge.mp3
+6:Electronic/KEYGENMUSiC MusicPack/FLG/FLG - Atomic Alarm Clock 5.85 crk.mod
+7:Electronic/KEYGENMUSiC MusicPack/BetaMaster/BetaMaster - J. River Media Center 11 crk.xm
+8:Electronic/KEYGENMUSiC MusicPack/ICU/ICU - UltraEdit-32 12.10 kg.xm
+9:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - SpiderWeb Games Geneforge 4 Edition kg.xm
+10:Video Game/Metal Gear Solid/[023] MGS3 - Snake Eater/disc 1/22 Old Metal Gear.mp3
+11:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - Advanced MP3 Converter 2.40 kg.xm
+12:Electronic/KEYGENMUSiC MusicPack/METROiD/METROiD - Prey +3 trn.xm
+13:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/11 Shunsuke Kida _ Old Hero.mp3
+14:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M06_Pinwheel.mp3
+15:Electronic/KEYGENMUSiC MusicPack/DiGERATi/DiGERATi - CHM To PDF Converter Professional 3.4 crk.xm
+16:Electronic/KEYGENMUSiC MusicPack/EMBRACE/EMBRACE - CloneDVD3.6.1.0 kg.xm
+17:Electronic/KEYGENMUSiC MusicPack/ICU/ICU - Hide Files and Folders 2.8 kg.xm
+18:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M16_Dark Sun Gwyndolin.mp3
+19:Electronic/KEYGENMUSiC MusicPack/F4CG/F4CG - WinRAR 3.60 Final crk.xm
+20:Electronic/KEYGENMUSiC MusicPack/FOFF/FOFF - PDF Converter Elite 2009 kg.xm
+21:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - Ahead DVD Ripper SE 1.4.2 kg.xm
+22:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/13 Shunsuke Kida _ Fool's Idol.mp3
+23:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/13 Shunsuke Kida _ Fool's Idol.mp3
+24:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/01 Shunsuke Kida _ Demon's Souls.mp3
+25:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M11_Great Grey Wolf Sif.mp3
+26:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/01 Shunsuke Kida _ Demon's Souls.mp3
+27:Electronic/KEYGENMUSiC MusicPack/METROiD/METROiD - Psi-Ops +3 trn.xm
+28:Electronic/KEYGENMUSiC MusicPack/ICU/ICU - Crocodile Technology 3D 606 kg.xm
+29:Electronic/KEYGENMUSiC MusicPack/F4CG/F4CG - WinRAR 3.60 beta 3 include DosRAR crk.xm
+30:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/05 Shunsuke Kida _ The Nexus.mp3
+31:Electronic/KEYGENMUSiC MusicPack/h4x0r/h4x0r - Dead Rising 2 Off The Record +20 trn_2.xm
+32:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/02 Shunsuke Kida _ The Beginning.mp3
+33:Electronic/KEYGENMUSiC MusicPack/DEViANCE/DEViANCE - Powerdrome kg.xm
+34:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/20 Shunsuke Kida _ Flamelurker.mp3
+35:Video Game/Metal Gear Solid/[034] MGS4 - Guns of the Patriots/disc 1/02 Love Theme.mp3
+36:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M10_Crossbreed Priscilla.mp3
+37:Electronic/KEYGENMUSiC MusicPack/METROiD/METROiD - Grand Theft Auto - San Andreas +11 trn.xm
+38:Electronic/Maktone/mod/JINGLE.MOD
+39:Electronic/KEYGENMUSiC MusicPack/FiRELiGHT/FiRELiGHT - The Chosen - Well Of Souls +12 trn_4.it
+40:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M04_Bell Gargoyle.mp3
+41:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - PowerCHM 5.x crk.xm
+42:Video Game/Metal Gear Solid/[023] MGS3 - Snake Eater/disc 1/01 Snake Eater.mp3
+43:Electronic/KEYGENMUSiC MusicPack/HERiTAGE/HERiTAGE - Advanced File Lock 6.0.3006.24085 crk.xm
+44:Electronic/KEYGENMUSiC MusicPack/METROiD/METROiD - The Suffering - Ties That Bind +4 trn.xm
+45:Video Game/Metal Gear Solid/[034] MGS4 - Guns of the Patriots/disc 2/15 Father & Son.mp3
+46:Electronic/KEYGENMUSiC MusicPack/ICU/ICU - AceFTP Pro 3.72.0 kg.xm
+47:Electronic/KEYGENMUSiC MusicPack/CiM/CiM - Apollo iPod Video Converter 2.6.0 kg.xm
+48:Electronic/KEYGENMUSiC MusicPack/IREC/IREC - Netgate Registry Cleaner 2.0.705.0 kg.xm
+49:Electronic/KEYGENMUSiC MusicPack/METROiD/METROiD - Crashday +4 trn.mod
+50:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M03_Taurus Demon.mp3
+51:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M01_Prologue 1.mp3
+52:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - Doom 3 Resurection Of Evil trn.xm
+53:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M07_Chaos Witch Quelaag.mp3
+54:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M05_Gaping Dragon.mp3
+55:Video Game/Metal Gear Solid/[023] MGS3 - Snake Eater/disc 1/02 'METAL GEAR SOLID' Main Theme ( METAL GEAR SOLID 3 Version ).mp3
+56:Electronic/KEYGENMUSiC MusicPack/GEAR/GEAR - MSN Webcam Recorder 1.2.0x crk.xm
+57:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M12_The Ancient Dragon.mp3
+58:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/14 Shunsuke Kida _ Maneater.mp3
+59:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/07 Shunsuke Kida _ Tower Knight.mp3
+60:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M02_Firelink Shrine.mp3
+61:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M08_Daughters of Chaos.mp3
+62:Video Game/Metal Gear Solid/[034] MGS4 - Guns of the Patriots/disc 1/01 Old Snake.mp3
+63:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/04 Shunsuke Kida _ Maiden in Black.mp3
+64:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - MyBusiness Manager 1.0 crk.xm
+65:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - MailHunter 2.69 kg.xm
+66:Video Game/Metal Gear Solid/[034] MGS4 - Guns of the Patriots/disc 2/16 Metal Gear Saga.mp3
+67:Electronic/Maktone/mod/JINGLE2.MOD
+68:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M15_Gwynevere, Princess of Sunlight.mp3
+69:Electronic/KEYGENMUSiC MusicPack/HOODLUM/HOODLUM - Maximus XV trn.mod
+70:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M14_Ornstein & Smough.mp3
+71:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - 3D Flash Animator 3.72 crk.xm
+72:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - Aya Software crk.mod
+73:Electronic/KEYGENMUSiC MusicPack/HOODLUM/HOODLUM - Airborne Troop intro.xm
+74:Video Game/Demon's Souls & Dark Souls/Demon's Souls - OST/06 Shunsuke Kida _ Phalanx.mp3
+75:Video Game/Demon's Souls & Dark Souls/Dark Souls - OST/M09_Iron Golem.mp3
+76:Electronic/KEYGENMUSiC MusicPack/F4CG/F4CG - MPEG4 Direct Maker 5.0.6.148 crk.xm
+77:Electronic/KEYGENMUSiC MusicPack/!Others/BUTTON CLICKERS - Stubbs The Zombie +3 trn.xm
+78:Electronic/KEYGENMUSiC MusicPack/!Others/CBR - CloneCD 5.3.0.1 crk.mod
+79:Electronic/KEYGENMUSiC MusicPack/!Others/Cin1 - DllErrorsFix crk.xm
+80:Electronic/KEYGENMUSiC MusicPack/!Others/EVASiON - Rome Total War 1.1 trainer.xm
+81:Electronic/KEYGENMUSiC MusicPack/!Others/Extreme - WinRAR 3.60 beta 6 crk.xm
+82:Electronic/KEYGENMUSiC MusicPack/!Others/Fanaion - Stronghold 2 1.1 +6 trn.xm
+83:Electronic/KEYGENMUSiC MusicPack/!Others/FHCF - 12Ghosts COMPLETE 9.70 kg.xm
+84:Electronic/KEYGENMUSiC MusicPack/!Others/GCT - Avast 4.7 kg.xm
+85:Electronic/KEYGENMUSiC MusicPack/!Others/L33VaNcL33F - DAEMON Tools Pro Advanced 4.10.218.0 crk.xm
+86:Electronic/KEYGENMUSiC MusicPack/!Others/MAZE - Xilisoft DVD Ripper Ultimate 5 kg.xm
+87:Electronic/KEYGENMUSiC MusicPack/!Others/MiNT - Comandos Strike Force 1.1 +4 trn.xm
+88:Electronic/KEYGENMUSiC MusicPack/!Others/Mp2k - Speeder XP 1.x crk.mod
+89:Electronic/KEYGENMUSiC MusicPack/!Others/PIONEER - PDF Password Cracker 2.0 crk.xm
+90:Electronic/KEYGENMUSiC MusicPack/!Others/RU-BOARD - Total Uninstall Pro 5.9.1.1309 crk.mod
+91:Electronic/KEYGENMUSiC MusicPack/!Others/SCORPiON - Trillian Pro 3.1 Build 121 crk.xm
+92:Electronic/KEYGENMUSiC MusicPack/AT4RE/AT4RE - XP Registry Cleaner 2.0 crk.it
+93:Electronic/KEYGENMUSiC MusicPack/BAKA!/BAKA! - Actify SpinFire Professional 8.0.1015 crk.mod
+94:Electronic/KEYGENMUSiC MusicPack/BAKA!/BAKA! - Clipboard Rover 1.0.3 crk.xm
+95:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - Hide Files and Folders 3.5 kg.xm
+96:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - Hide IP Easy 4.2.2.8 crk.xm
+97:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - Inpaint 2.4 crk.mod
+98:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - Internet Download Manager 5.15 crk.it
+99:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - USB Disk Security 5.2.0.5 kg.xm
+100:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - phpDesigner 7.2.2.27 crk.xm
+101:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - PcBoost 3.2.2.2009 crk.mod
+102:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - IceOnAir 0.8.7 crk.xm
+103:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - Free FLV Converter 6.5.0 crk.mod
+104:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - GameBoost 1.7.12.2010 crk.xm
+105:Electronic/KEYGENMUSiC MusicPack/uCF/uCF - Ace Video Workshop kg.xm
+106:Electronic/KEYGENMUSiC MusicPack/TWK/TWK - FlashGet 1.71 crk.mod
+107:Electronic/KEYGENMUSiC MusicPack/TSRh/TSRh - WinImage 8.0 kg.xm
+108:Electronic/KEYGENMUSiC MusicPack/TSRh/TSRh - SimAquarium 2.06 Tank1 kg.xm
+109:Electronic/KEYGENMUSiC MusicPack/TSRh/TSRh - Naturpic Audio File Cutter 3.20 kg.xm
+110:Electronic/KEYGENMUSiC MusicPack/TSRh/TSRh - Naturpic Audio File Cutter 3.20 kg.xm
+111:Electronic/KEYGENMUSiC MusicPack/TSRh/TSRh - Solid Converter PDF 3.0 kg.xm
+112:Electronic/KEYGENMUSiC MusicPack/tRUE/tRUE - Cave Stor trn.mod
+113:Electronic/KEYGENMUSiC MusicPack/tRUE/tRUE - Error Repair Professional 3.7.7 crk.xm
+114:Electronic/KEYGENMUSiC MusicPack/tRUE/tRUE - YouTube Video Converter 1.0.91 kg.xm
+115:Electronic/KEYGENMUSiC MusicPack/tRUE/tRUE - UltraISO 9.3.02612 crk.mod
+116:Electronic/KEYGENMUSiC MusicPack/tRUE/tRUE - YouTube Video Converter 1.0.91 kg.xm
+117:Electronic/KEYGENMUSiC MusicPack/ECLiPSE/ECLiPSE - Battle Castles 1.0 kg.xm
+118:Electronic/KEYGENMUSiC MusicPack/EMBRACE/EMBRACE - CloneDVD3.6.1.0 kg.xm
+119:Electronic/KEYGENMUSiC MusicPack/F4CG/F4CG - WinRAR 3.60 beta 3 include DosRAR crk.xm
+120:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - CpuIdle 7.0.4.14 crk.xm
+121:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - Storm Studio 3.0 crk.xm
+122:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - PDF2TXT 3.0 kg.xm
+123:Electronic/KEYGENMUSiC MusicPack/FFF/FFF - Philatelix 6.06 kg.xm
+124:Electronic/KEYGENMUSiC MusicPack/FLG/FLG - Atomic Alarm Clock 5.85 crk.mod
+125:Electronic/KEYGENMUSiC MusicPack/FLG/FLG - Solsuite 2010 10.5 crk.it
+126:Electronic/KEYGENMUSiC MusicPack/FLG/FLG - SolSuite 2011 11.10 crk.mod
+127:Electronic/KEYGENMUSiC MusicPack/FLG/FLG - Solsuite 2012 12.0 crk.mod
+128:Electronic/KEYGENMUSiC MusicPack/GEAR/GEAR - Bitwerk Faxalarm 2.3.x kg.xm
+129:Electronic/KEYGENMUSiC MusicPack/GEAR/GEAR - Bufo Project Damian Schmidt Bufovok Vokabeltrainer 3.x crk.xm
+130:Electronic/KEYGENMUSiC MusicPack/GEAR/GEAR - Desksoft Checkmail 2.6.0 kg.xm
+131:Electronic/KEYGENMUSiC MusicPack/GEAR/GEAR - IOK PromoWare 3.0.0.8 crk.mod
+132:Electronic/KEYGENMUSiC MusicPack/MYTH/MYTH - Warlords Battlecry IIIinstaller_3.xm
+133:Electronic/KEYGENMUSiC MusicPack/MESMERiZE/MESMERiZE - Cockos REAPER 3.73 kg.it
+134:Electronic/KEYGENMUSiC MusicPack/MESMERiZE/MESMERiZE - Dynamic HTML Editor 5.6.3 kg.xm
+135:Electronic/KEYGENMUSiC MusicPack/Lz0/Lz0 - Navicat 9.0.11 kg.xm
+136:Electronic/KEYGENMUSiC MusicPack/kZ/kZ - Simpo PDF Creator Pro 3.1.1.0 crk.s3m
+137:Electronic/KEYGENMUSiC MusicPack/Kindly/Kindly - Game Maker 6.1.3.0 Rus.xm
+138:Electronic/KEYGENMUSiC MusicPack/Kindly/Kindly - AutoPlay Media Studio 6.0.5.0 installer.mod
+139:Electronic/KEYGENMUSiC MusicPack/Kindly/Kindly - QuizEngine 1.0.1.0 crk.mod
+140:Electronic/KEYGENMUSiC MusicPack/JUNLAJUBALAM/JUNLAJUBALAM - Avs4You Products activator 2011 v1.1.xm
+141:Electronic/KEYGENMUSiC MusicPack/ICU/ICU - UltraEdit-32 12.10 kg.xm
+142:Electronic/KEYGENMUSiC MusicPack/h4x0r/h4x0r - Batman Arkham City 1.01 +7 trn.xm
+143:Electronic/KEYGENMUSiC MusicPack/h4x0r/h4x0r - Alice Madness Returns +15 trn.xm
+144:Electronic/KEYGENMUSiC MusicPack/FOFF/FOFF - PDF Converter Elite 2009 kg.xm
+145:Electronic/KEYGENMUSiC MusicPack/UnderPL/UnderPL - Windows Expert 2.5 kg.xm
+146:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - Internet Download Manager 6.0Beta crk.xm
+147:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - Joboshare Video Converter 2.8.0.0820 kg.xm
+148:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - IsoBuster 2.6 alpha 2.5.9 crk.xm
+149:Electronic/KEYGENMUSiC MusicPack/Under SEH/Under SEH - iRedSoft.Batch.It.Ultra.3.9895 crk.xm
 playlist_end

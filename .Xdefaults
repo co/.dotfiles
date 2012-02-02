@@ -1,4 +1,5 @@
 !xrdb $HOME/.Xdefaults
+*background:  #333333
 urxvt*depth: 32
 URxvt.scrollstyle:      plain
 URxvt.secondaryScroll:  false
