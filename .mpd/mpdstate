@@ -1,8 +1,7 @@
-sw_volume: 100
+sw_volume: 0
 audio_device_state:1:default detected output
-state: pause
+state: stop
 current: 2
-time: 67
 random: 1
 repeat: 0
 single: 0
@@ -11,29 +10,14 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: nan
 playlist_begin
-0:Good Stuff/Detectivbyrån/e18/01-detektivbyrån-e18.mp3
-1:Good Stuff/Detectivbyrån/e18/02-detektivbyrån-hemvägen.mp3
-2:Good Stuff/Detectivbyrån/e18/03-detektivbyrån-nattöppet.mp3
-3:Good Stuff/Detectivbyrån/e18/04-detektivbyrån-monster.mp3
-4:Good Stuff/Detectivbyrån/e18/05-detektivbyrån-dansbanan.mp3
-5:Good Stuff/Detectivbyrån/e18/06-detektivbyrån-granmon.mp3
-6:Good Stuff/Detectivbyrån/e18/07-detektivbyrån-vänerhavet.mp3
-7:Good Stuff/Detectivbyrån/e18/08-detektivbyrån-lyckans_undulat.mp3
-8:Good Stuff/Detectivbyrån/e18/09-detektivbyrån-hem_ljuva_hem.mp3
-9:Good Stuff/Detectivbyrån/e18/10-detektivbyrån-home_sweet_home.mp3
-10:Good Stuff/Detectivbyrån/e18/11-detektivbyrån-laka-koffa.mp3
-11:Good Stuff/Detectivbyrån/wermland/01-detektivbyran-om_du_moter_varg.mp3
-12:Good Stuff/Detectivbyrån/wermland/02-detektivbyran-karlekens_alla_farjor.mp3
-13:Good Stuff/Detectivbyrån/wermland/03-detektivbyran-honky_tonk_of_wermland.mp3
-14:Good Stuff/Detectivbyrån/wermland/04-detektivbyran-rymden_i_en_lada.mp3
-15:Good Stuff/Detectivbyrån/wermland/05-detektivbyran-generation_celebration.mp3
-16:Good Stuff/Detectivbyrån/wermland/06-detektivbyran-life-universe.mp3
-17:Good Stuff/Detectivbyrån/wermland/07-detektivbyran-neonland.mp3
-18:Good Stuff/Detectivbyrån/wermland/08-detektivbyran-hus_vid_havet.mp3
-19:Good Stuff/Detectivbyrån/wermland/09-detektivbyran-partyland.mp3
-20:Good Stuff/Detectivbyrån/wermland/10-detektivbyran-camping.mp3
-21:Good Stuff/Detectivbyrån/wermland/11-detektivbyran-sista_tryckaren.mp3
-22:Good Stuff/Detectivbyrån/wermland/12-detektivbyran-en_annan_typ_av_disco.mp3
-23:Good Stuff/Detectivbyrån/wermland/13-detektivbyran-dygnet_runt.mp3
-24:Good Stuff/Detectivbyrån/wermland/14-detektivbyran-054.mp3
+0:Internet/Super_Mario_Tylenol.oga
+1:Internet/U.N+Owen+%28COOL%26CREATE%29.mp3
+2:Internet/U.N+Owen+was+her+%28Sound+Sepher%29.mp3
+3:Internet/U.N+Owen+was+her+%E3%80%8E2%E3%80%8F.mp3
+4:Internet/Nigts of Nights a.mp3
+5:Internet/flowering.mp3
+6:Internet/Flowering+Night.mp3
+7:Internet/Bad+Apple.mp3
+8:Internet/%E3%80%90%E6%9D%B1%E6%96%B9%E3%80%91Bad+Apple%21%21%E3%80%80%EF%BC%B0%EF%BC%B6%E3%80%90%E4%BE%BF%E4%B9%97%E3%81%97%E3%81%A6%E3%83%94%E3%82%A2%E3%83%8E%E9%80%A3%E5%BC%BE%E9%A2%A8%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E3%80%91.mp3
+9:Internet/Night of Nights b.mp3
 playlist_end

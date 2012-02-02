@@ -38,6 +38,10 @@ set title
  Bundle 'tomasr/molokai'
  Bundle 'vim-scripts/bclear'
  Bundle 'therubymug/vim-pyte'
+ Bundle 'aerosol/vim-compot'
+ Bundle 'vim-scripts/a.vim'
+ Bundle 'vim-scripts/darkburn'
+ Bundle 'vim-scripts/Ambient-Color-Scheme'
 
  " file specific
 Bundle 'vim-scripts/OmniCppComplete'

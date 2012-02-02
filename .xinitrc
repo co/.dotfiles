@@ -10,7 +10,7 @@
 urxvt &
 #exec scrotwm
 #exec wmii
-#exec xmonad
+exec dwm
 #exec pekwm
 #exec openbox
-exec awesome --config  ~/.config/awesome/rc.lua
+    #exec awesome 
