@@ -14,5 +14,11 @@ sleep 0.3
 xset +fp /usr/share/fonts/local
 xset fp rehash
 
+#starts pidgin
+pidgin &
+firefox &
+spotify &
+thunderbird &
+
 #starts mpd
 mpd ~/.mpd/mpd.conf 2> /dev/null

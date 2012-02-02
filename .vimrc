@@ -25,14 +25,15 @@ set title
  "
  " original repos on github
  Bundle 'tpope/vim-fugitive'
- Bundle 'tpope/surround'
- Bundle 'tpope/repeat'
+ Bundle 'tpope/vim-surround'
+ Bundle 'tpope/vim-repeat'
+ Bundle 'mileszs/ack.vim'
  Bundle 'vim-scripts/Gundo'
  Bundle 'vim-scripts/taglist.vim'
  Bundle 'vim-scripts/YankRing.vim'
  Bundle 'msanders/snipmate.vim'
  Bundle 'vim-scripts/AutoComplPop'
- Bundle 'vim-scripts/a.vim'
+ "Bundle 'vim-scripts/a.vim' "<--This shit, don't use it.
 
  " colorschemes
  Bundle 'tomasr/molokai'
@@ -44,7 +45,7 @@ set title
  Bundle 'vim-scripts/Ambient-Color-Scheme'
 
  " file specific
-Bundle 'vim-scripts/OmniCppComplete'
+"Bundle 'vim-scripts/OmniCppComplete'
 "Bundle 'Rip-Rip/clang_complete'
 "Bundle 'vim-scripts/Vim-JDE'
 
@@ -61,14 +62,11 @@ filetype on
 filetype plugin on
 filetype indent on
 "set ofu=syntaxcomplete#Complete
+autocmd FileType vimwiki setlocal foldmethod=indent
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Essential
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Cool tab completion stuff
-set wildmenu
-set wildmode=list:longest,full
-
 " Got backspace? Now it can do everything.
 set backspace=2
 
@@ -78,7 +76,7 @@ set hidden
 " Enforces line width.
 set textwidth=80
 
-" Wraps lines when they get too long. Not as nice as one might think.
+" Wraping lines when they get too long. Not as nice as one might think.
 set nowrap
 
 "maps <leader> to , very useful for maping.
@@ -141,7 +139,7 @@ set list
 set listchars=tab:\¦\ ,trail:·
 
 "Toggle show tabs and spaces.
-nmap <silent> <leader>s :set nolist!<CR>
+"nmap <silent> <leader>s :set nolist!<CR>
 
 " This shows what you are typing as a command.  I love this!
 set showcmd
@@ -158,12 +156,12 @@ set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " A place for everything and everything in its place.
 set backup
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
+set backupdir=~/.vim/backup//
+set directory=~/.vim/tmp//
 
 " Saves undo, awesome stuff.
 set undofile
-set undodir=~/.vim/undo
+set undodir=~/.vim/undo//
 set undolevels=1000
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -236,8 +234,18 @@ set mouse=a
 " Automatically cd into the directory that the file is in.
 set autochdir
 
+set wildmenu
+set wildmode=list:longest,full
+
 set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png,*.swp,*.class
+
+set wildignore+=.hg,.git,.svn                   " Version control
+set wildignore+=*.aux,*.out,*.toc               " LaTeX intermediate files
+set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg  " binary images
+set wildignore+=*.out,*.o,*.obj,*.exe,*.dll,*.manifest,*.class,*.dll,*.pyc " compiled object files
+
 set iskeyword=@,48-57,_,å,ä,ö,Å,Ä,Ö
+
 
 " Folding Stuffs automaticly.
 set foldmethod=syntax
@@ -271,17 +279,24 @@ set t_vb=
 "nmap <C-h> :
 "vmap <C-h> <Esc>
 
+" Quickreturn
+inoremap <c-cr> <esc>A<cr>
+
 " Map space to / and c-space to ?
+" Insert Mode Completion {{{
+
+inoremap <c-l> <c-x><c-l>
+inoremap <c-f> <c-x><c-f>
+
 nmap <space> za
 nmap <leader><space> zM
 
-" Map Ctrl+d till x i insert
-imap <C-d> <BS>
+" Use ,z to "focus" the current fold.
+nnoremap <leader>z zMzvzz
 
 no zh zj
 no zt zk
 
-" With added benefits.
 no - $
 no _ 0
 
@@ -296,8 +311,20 @@ map! <F1> <Esc>
 vmap Q gq
 nmap Q gqap
 
+" Split line (sister to [J]oin lines)
+" The normal use of S is covered by cc, so don't worry about shadowing it.
+nnoremap S i<cr><esc><right>
+
 " Shortcut to make.
 nmap mk :make<CR>
+
+" Align text
+nnoremap <leader>Al :left<cr>
+nnoremap <leader>Ac :center<cr>
+nnoremap <leader>Ar :right<cr>
+vnoremap <leader>Al :left<cr>
+vnoremap <leader>Ac :center<cr>
+vnoremap <leader>Ar :right<cr>
 
 " Use ,d (or ,dd or ,dh or 20,dd) to delete a line without adding it to the.
 " Yanked stack (also, in visual mode).
@@ -309,6 +336,7 @@ cmap w!! %!sudo tee > /dev/null %
 
 "Quick Switch.
 nmap <leader>h :b#<CR>
+nmap <leader>b :ls<CR>:b
 
 "Time to tune my vimrc.
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
