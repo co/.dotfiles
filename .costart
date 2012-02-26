@@ -19,6 +19,7 @@ pidgin &
 firefox &
 spotify &
 thunderbird &
+SpiderOak &
 
 #starts mpd
 mpd ~/.mpd/mpd.conf 2> /dev/null

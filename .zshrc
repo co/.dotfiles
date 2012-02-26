@@ -12,11 +12,8 @@ bindkey -e
 autoload -Uz compinit
 compinit
 
-alias -g EG='|& egrep'
-alias -g EH='|& head'
-alias -g EL='|& less'
-alias -g PL='; aplay -q ~/.sound/mobd.wav '
-alias -g ET='|& tail'
+alias -g P='; aplay -q ~/.sound/mobd.wav '
+alias -g B='>/dev/null 2>/dev/null &'
 
 PS1=$'%{\e[1;36m%}[%{\e[1;34m%}%~%{\e[1;36m%}]%{\e[0;33m%}€%{\e[0m%} '
 
@@ -65,7 +62,7 @@ alias office="soffice"
 export EDITOR="vim"
 export VISUAL="vim"
 export PAGER="vim -"
-export MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -c' colorscheme codeburn' -"
+export MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -c' colorscheme molokai' -"
 export DEITY="fsm"
 stty stop ""
 t ls

@@ -33,16 +33,17 @@ set title
  Bundle 'vim-scripts/YankRing.vim'
  Bundle 'msanders/snipmate.vim'
  Bundle 'vim-scripts/AutoComplPop'
+ Bundle 'Lokaltog/vim-powerline'
+ Bundle 'mattsa/vim-fuzzee'
  "Bundle 'vim-scripts/a.vim' "<--This shit, don't use it.
 
  " colorschemes
  Bundle 'tomasr/molokai'
  Bundle 'vim-scripts/bclear'
  Bundle 'therubymug/vim-pyte'
- Bundle 'aerosol/vim-compot'
- Bundle 'vim-scripts/a.vim'
- Bundle 'vim-scripts/darkburn'
- Bundle 'vim-scripts/Ambient-Color-Scheme'
+ Bundle 'sjl/badwolf'
+ Bundle 'vim-scripts/Eddie.vim'
+ Bundle 'ciaranm/inkpot'
 
  " file specific
 "Bundle 'vim-scripts/OmniCppComplete'
@@ -99,7 +100,8 @@ let g:vimwiki_list = [{'path': '~/notes/wiki/'}]
 syntax enable
 syntax on
 "Dark colorschemes
-colorscheme molokai      "Neon.
+"colorscheme molokai      "Neon.
+colorscheme badwolf      "Like molokai but more earthy.
 "colorscheme two2tango
 "colorscheme twilight256 "Earthy.
 "colorscheme xoria256    "Less contrast.
@@ -349,7 +351,8 @@ nnoremap <F4> :TlistToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
 
 "Toggle spellcheck.
-nnoremap <F6> ::set nospell!<CR>
+nnoremap <F6> :set nospell!<CR>
 map <C-F12> :!ctags -R --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
 
+set encoding=utf-8
 set shell=/bin/zsh
