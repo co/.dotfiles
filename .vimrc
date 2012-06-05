@@ -2,9 +2,7 @@
 "co's .vimrc, full of epic awesomeness.
 "Made with great love by co.
 "
-"Last update: Sat Nov  5 20:47:18 CET 2011 (:r! date)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Time to get awesome. Full power activated.
 set nocompatible
 behave xterm
 
@@ -35,6 +33,8 @@ set title
  Bundle 'vim-scripts/AutoComplPop'
  Bundle 'Lokaltog/vim-powerline'
  Bundle 'mattsa/vim-fuzzee'
+ Bundle 'sjl/clam.vim'
+ Bundle 'sjl/splice.vim.git'
  "Bundle 'vim-scripts/a.vim' "<--This shit, don't use it.
 
  " colorschemes
@@ -44,6 +44,8 @@ set title
  Bundle 'sjl/badwolf'
  Bundle 'vim-scripts/Eddie.vim'
  Bundle 'ciaranm/inkpot'
+ Bundle 'nanotech/jellybeans.vim'
+ Bundle 'aerosol/vim-compot'
 
  " file specific
 "Bundle 'vim-scripts/OmniCppComplete'
@@ -82,6 +84,7 @@ set nowrap
 
 "maps <leader> to , very useful for maping.
 let mapleader=","
+let maplocalleader=";"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Script specific
@@ -101,16 +104,18 @@ syntax enable
 syntax on
 "Dark colorschemes
 "colorscheme molokai      "Neon.
-colorscheme badwolf      "Like molokai but more earthy.
+"colorscheme badwolf      "Like molokai but more earthy.
 "colorscheme two2tango
 "colorscheme twilight256 "Earthy.
 "colorscheme xoria256    "Less contrast.
+"colorscheme jellybeans      "lixe xoria256 but nicer on terminal
 
 "Grey colorschemes
 "colorscheme codeburn    "Nice on the eyes.
 "colorscheme darkspectrum
 "colorscheme no_quarter
 "colorscheme zenesque    "Only gray.
+colorscheme lucius      "Dark grey low contrast, with light alternative.
 
 "Light colorschemes
 "colorscheme bclear      "White and colorful.
@@ -165,6 +170,9 @@ set directory=~/.vim/tmp//
 set undofile
 set undodir=~/.vim/undo//
 set undolevels=1000
+
+" YankRing history file.
+let g:yankring_history_dir = '$HOME/.vim/history/'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting
@@ -277,9 +285,8 @@ set t_vb=
 
 "use Ctrl+C instead
 " Ctrl+h -> <Esc>
-"imap <C-h> <Esc>
-"nmap <C-h> :
-"vmap <C-h> <Esc>
+imap <C-c> <Esc>
+vmap <C-c> <Esc>
 
 " Quickreturn
 inoremap <c-cr> <esc>A<cr>
@@ -294,12 +301,11 @@ nmap <space> za
 nmap <leader><space> zM
 
 " Use ,z to "focus" the current fold.
-nnoremap <leader>z zMzvzz
+nnoremap <leader>z zMzAzz
 
 no zh zj
 no zt zk
 
-no - $
 no _ 0
 
 "It's more useful to use ' instead of `.
@@ -335,6 +341,7 @@ vmap <silent> <leader>d "_d
 
 " w!! -> sudo save.
 cmap w!! %!sudo tee > /dev/null %
+cmap W<CR> :w<CR>
 
 "Quick Switch.
 nmap <leader>h :b#<CR>
@@ -355,4 +362,11 @@ nnoremap <F6> :set nospell!<CR>
 map <C-F12> :!ctags -R --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
 
 set encoding=utf-8
-set shell=/bin/zsh
+set shell=/bin/bash
+
+nnoremap <silent> <leader>? :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
+
+  " solid underscore
+  let &t_SI .= "\<Esc>[4 q"
+  " solid block
+  let &t_EI .= "\<Esc>[2 q"
