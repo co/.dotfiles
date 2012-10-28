@@ -10,12 +10,6 @@
 urxvt &
 #exec scrotwm
 #exec wmii
-exec dwm
 #exec pekwm
 #exec openbox
-<<<<<<< HEAD
-    #exec awesome 
-=======
-#exec awesome --config  ~/.config/awesome/rc.lua
-exec subtle
->>>>>>> 16848ec28a35cdc997b65592b7e7b543f731350e
+exec /usr/bin/awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr

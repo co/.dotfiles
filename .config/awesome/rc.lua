@@ -17,163 +17,35 @@ terminal = "urxvt"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
--- Default modkey.
--- Usually, Mod4 is the key with a logo between Control and Alt.
--- If you do not like this or do not have such a key,
--- I suggest you to remap Mod4 to another key using xmodmap or other tools.
--- However, you can use another modifier like Mod1, but it may interact with others.
+-- Windows key is the mod key.
 modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
 {
-    --awful.layout.suit.floating,
     awful.layout.suit.tile,
-    --awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
-    --awful.layout.suit.tile.top,
     awful.layout.suit.fair,
-    --awful.layout.suit.fair.horizontal,
-    --awful.layout.suit.spiral,
-    --awful.layout.suit.spiral.dwindle,
     awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
     awful.layout.suit.magnifier
 }
--- }}}
 
--- {{{ Tags
 -- Define a tag table which hold all screen tags.
-tags = {}
+tags = { 1, 2}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+    tags[s] = awful.tag({ " term ", " web ", " code ", " misc ", "void "}, s, layouts[1])
 end
--- }}}
 
--- {{{ Menu
--- Create a laucher widget and a main menu
---myawesomemenu = {
-   --{ "manual", terminal .. " -e man awesome" },
-   --{ "edit config", editor_cmd .. " " .. awful.util.getdir("config") .. "/rc.lua" },
-   --{ "restart", awesome.restart },
-   --{ "quit", awesome.quit }
---}
-
---mymainmenu = awful.menu({ items = { --{ "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    --{ "quit", awesome.quit }
-                                    --{ "open terminal", terminal }
-                                  --}
-                        --})
-
---mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
-                                     --menu = mymainmenu })
--- }}}
-
--- {{{ Wibox
+-- Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock({ align = "right" })
 
-	
-
-cpuicon = widget({type = "imagebox" })
-cpuicon.image = image(beautiful.cpu_icon)
-
-memicon = widget({ type = "imagebox" })
-memicon.image = image(beautiful.mem_icon)
-
-upicon = widget({ type = "imagebox" })
-upicon.image = image(beautiful.up_icon)
-
-downicon = widget({ type = "imagebox" })
-downicon.image = image(beautiful.down_icon)
-
-
-
-
-memwidget = widget({ type = "textbox" }) --display free memory
-vicious.register(memwidget, vicious.widgets.mem, '<span color="'
-  .. beautiful.fg_mem_widget ..'">$1%</span>', 3)
-
-cpuwidget = widget({ type = "textbox" })
-vicious.register(cpuwidget, vicious.widgets.cpu, '<span color="'
-  .. beautiful.fg_cpu_widget ..'">$1%</span>')
-
 netwidget = widget({ type = "textbox" })
 vicious.register(netwidget, vicious.widgets.net, '<span color="'
-  .. beautiful.fg_netdn_widget ..'">${eth0 down_kb}</span> <span color="'
-  .. beautiful.fg_netup_widget ..'">${eth0 up_kb}</span>', 3)
-
-mail_icon = widget({ type = "imagebox" })
-mail_icon.image = image(beautiful.mail_icon)
-
-nomail_icon = widget({ type = "imagebox" })
-nomail_icon.image = image(beautiful.nomail_icon)
-
---gmailwidget
-    mygmail = widget({ type = "textbox" })
-    --mygmail_t = awful.tooltip({ objects = { mygmail }, })
-    vicious.register(mygmail, vicious.widgets.gmail, 
-    function (widget, args)
-    if args["{count}"] > 0 then
-      nomail_icon.visible = false
-      mail_icon.visible = true
-      return '<span color="' .. beautiful.fg_focus .. '">' .. args["{count}"] .. '</span>'
-    else
-      mail_icon.visible = false
-      nomail_icon.visible = true
-      return ""
-    end
-    end, 10)
-      --function (widget, args)
-        --mygmail_t:set_text(args["{subject}"])
-        --return ' g: <span color="white"
---weight="bold">'..args[1]..'</span> | '
-      --end, 10)
-
-
-pacicon = widget({ type = "imagebox" })
-pacicon.image = image(beautiful.pac_icon)
-
-clydeicon = widget({ type = "imagebox" })
-clydeicon.image = image(beautiful.clyde_icon)
-
-nopacicon = widget({ type = "imagebox" })
-nopacicon.image = image(beautiful.blue_icon)
-
-pacwidget = widget({ type = "textbox" })
-vicious.register(pacwidget, vicious.widgets.pkg,
-   function (widget, args)
-   lock = 0
-   local f = io.popen("ls /var/lib/pacman/db.lck")
-   for line in f:lines() do
-        lock = lock + 1
-   end
-
-   if lock > 0 then
-      nopacicon.visible = false
-      clydeicon.visible = false
-      pacicon.visible = true
-      return ""
-   elseif args[1] > 0 then
-      nopacicon.visible = false
-      pacicon.visible = false
-      clydeicon.visible = true
-      return '<span color="' .. beautiful.fg_pac_widget .. '">' .. args[1] .. '</span>'
-   else
-      pacicon.visible = false
-      clydeicon.visible = false
-      nopacicon.visible = true
-      return ""
-   end
-   end, 5, "Arch" )
-
-
-spacer = widget({ type = "imagebox"})
-spacer.image = image(beautiful.separator_icon)
-
-end_icon = widget({ type = "imagebox"})
-end_icon.image = image(beautiful.end_icon)
+  .. beautiful.fg_netdn_widget ..'">[↓ ${eth0 down_kb}]</span> <span color="'
+  .. beautiful.fg_netup_widget ..'">[${eth0 up_kb} ↑]</span>', 3)
 
 -- Create a systray
 mysystray = widget({ type = "systray" })
@@ -247,18 +119,13 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
-        mytextclock, spacer,
-        memwidget, memicon, spacer,
-        cpuwidget, cpuicon, spacer,
-        upicon, netwidget, downicon, spacer,
-        pacwidget, pacicon, clydeicon, nopacicon, spacer,
-        mygmail, nomail_icon, mail_icon, end_icon,
+        mytextclock, 
+        upicon, netwidget, downicon,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
     }
 end
--- }}}
 
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
@@ -272,7 +139,7 @@ root.buttons(awful.util.table.join(
 globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
-    awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
+    awful.key({ modkey,           }, "Tab", awful.tag.history.restore),
 
     awful.key({ modkey,           }, "h",
         function ()
@@ -292,7 +159,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Control" }, "h", function () awful.screen.focus_relative( 1) end),
     awful.key({ modkey, "Control" }, "t", function () awful.screen.focus_relative(-1) end),
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto),
-    awful.key({ modkey,           }, "Tab",
+    awful.key({ modkey,           }, "Escape",
         function ()
             awful.client.focus.history.previous()
             if client.focus then
@@ -329,13 +196,10 @@ globalkeys = awful.util.table.join(
 clientkeys = awful.util.table.join(
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
     awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end),
-    awful.key({ modkey,           }, "q",      function (c) c:kill()                         end),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
-    awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
+    awful.key({ modkey,           }, "g",      awful.client.movetoscreen                        ),
     awful.key({ modkey, "Shift"   }, "r",      function (c) c:redraw()                       end),
-    awful.key({ modkey,           }, "k",      function (c) c.ontop = not c.ontop            end),
-    awful.key({ modkey,           }, "b",      function (c) c.minimized = not c.minimized    end),
     awful.key({ modkey,           }, "m",
         function (c)
             c.maximized_horizontal = not c.maximized_horizontal
@@ -411,8 +275,32 @@ awful.rules.rules = {
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
 }
--- }}}
 
+term = 1
+web  = 2
+code = 3
+misc = 4
+void = 5
+
+for s = 1, screen.count() do
+	awful.rules.rules = {
+		{ rule = { class = "urxvt" },
+		properties = { tag = tags[s][term] } },
+
+		{ rule = { class = "Firefox" },
+		properties = { tag = tags[s][web] } },
+
+		{ rule = { class = "google-chrome" },
+		properties = { tag = tags[s][web] } },
+
+		{ rule = { class = "gvim" },
+		properties = { tag = tags[s][code] } },
+
+		{ rule = { class = "thunar" },
+		properties = { tag = tags[s][misc] } },
+	}
+end
+-- }}}
 -- {{{ Signals
 -- Signal function to execute when a new client appears.
 client.add_signal("manage", function (c, startup)
