@@ -15,11 +15,6 @@ xset +fp /usr/share/fonts/local
 xset fp rehash
 
 #starts pidgin
-pidgin &
-firefox &
-spotify &
-thunderbird &
-SpiderOak &
+google-chrome &
 
-#starts mpd
-mpd ~/.mpd/mpd.conf 2> /dev/null
+~/bin/touchpad_settings.sh

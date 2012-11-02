@@ -39,7 +39,6 @@ alias pacman="pacman-color"
 # colorized pacman output with pacs alias:
 alias mu="ncmpcpp"
 alias rt='rtorrent'
-alias t='todo.sh'
 alias wine='schroot -pqd "$(pwd)" -- wine'
 
 #feh aliases
@@ -65,4 +64,3 @@ export PAGER="vim -"
 export MANPAGER="vim -c '%!col -b' -c 'set ft=man nomod nolist' -c 'set nomodifiable' -c' colorscheme molokai' -"
 export DEITY="fsm"
 stty stop ""
-t ls

@@ -1,48 +1,20 @@
 !xrdb $HOME/.Xdefaults
 *background:  #333333
-urxvt*depth: 32
 URxvt.scrollstyle:      plain
 URxvt.secondaryScroll:  false
 URxvt.background:       rgb:29/29/26
-urxvt*scrollBar:        false
-!
-!URxvt*inheritPixmap: true
-!URxvt*tintColor: white
-!URxvt*shading: 20
-!URxvt*transparent: true
-!URxvt*shading: 20
-!URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=13
+URxvt*scrollBar:        false
 
+URxvt*font: 10x20
 !bra men stor
 !URxvt*font: xft:Fixed:size=11
 
-!bra och liten
-URxvt*font: 8x13
-
-!URxvt*font: -erus-erusfont-medium-r-normal--11-80-100-100-c-60-iso10646-1
-!URxvt*boldFont: -erus-erusfont-bold-r-normal--11-80-100-100-c-60-iso10646-1
-!URxvt*boldFont: 8x13
-!URxvt*italicFont: 5x8
-
 urxvt.xftAntialias: false
 urxvt.jumpScroll: true
-!urxvt.tintColor: white
 urxvt.internalBorder: 0
 urxvt.cursorBlink: false
-!urxvt.cursorColor: #E2BAF1
-!urxvt.cursorColor: #ff9900
-!urxvt.cursorColor2: #000000
-!urxvt.background: #262729
-!urxvt.foreground: light grey
-!urxvt.colorBD: #ffffff
-!urxvt.colorIT: #bbbbbb
-!urxvt.colorUL: #999999
-!urxvt.underlineColor: #999999
 urxvt.borderless: true
 
-!URxvt*font: -*-terminus-medium-r-*-*-14-120-*-*-*-*-*-*
-!urxvt*font:      -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
-!urxvt*font:      -dec-terminal-medium-*-*-*-*-*-*-*-*-*-*-*
 
 !!dark theme
 !*background:  #333333
@@ -71,184 +43,3 @@ urxvt.borderless: true
 !! White
 *color7:      #cccccc
 *color15:     #ffffff
-
-
-
-
-!#include "/home/co/.colorscheme/solarized"
-
-!bclear style
-
-!*background:  #ffffff
-!*foreground:  #000000
-!! Black
-!*color0:      #000000
-!*color8:      #323232
-!! Red
-!*color1:      #dc2c00
-!*color9:      #c81414
-!! Green
-!*color2:      #00cc00
-!*color10:     #22aa00
-!! Yellow
-!*color3:      #db9628
-!*color11:     #c17d11
-!! Blue
-!*color4:      #003cb4
-!*color12:     #0022aa
-!! Mangenta
-!*color5:      #f00078
-!*color13:     #75008c
-!! Cyan 
-!*color6:      #008c8c
-!*color14:     #1994d1
-!! White
-!*color7:      #969696
-!*color15:     #ffffff
-
-
-
-!*background: #151515
-!*foreground: #cacaca
-
-!*background: #262626
-!*foreground: #686868
-
-!Colorful-Neon
-! Black
-!*color0: #5A5A5A
-!*color0: #262729
-!*color8: #554444
-!*color8: #3E3E3E
-! Red
-!*color1: #FF4747
-!*color9: #FF6767
-! Green
-!*color2: #AFC81C
-!*color10: #BFC81C
-! Yellow
-!*color3: #FDD338
-!*color11: #F4D461
-! Blue
-!*color4: #619AF4
-!*color12: #5496FF
-! Purple
-!*color5: #5F5A90
-!*color13: #826AB1
-! Cyan
-!*color6: #47E0FF
-!*color14: #2ED9FB
-! White
-!*color7: #FFFFFF
-!*color15: #DEDEDE
-
-!Warm Colors
-
-!black
-!*color0: #262729
-!*color8: #554444
-
-!red
-!*color1: #EA6868
-!*color9: #FF7272
-!green
-!*color2: #ABCB8D
-!*color10: #AFD78A
-!yellow
-!*color3: #E8AE5B
-!*color11: #FFA75D
-!blue
-!*color4: #71C5F4
-!*color12: #67CDE9
-!magenta
-!*color5: #E2BAF1
-!*color13: #ECAEE9
-!cyan
-!*color6: #21F1EA
-!*color14: #36FFFC
-!white
-!*color7: #F1F1F1
-!*color15: #FFFFFF
-
-!Arthur Colors
-!*color0: #3d352a
-!*color1: #cd5c5c
-!*color2: #86af80
-!*color3: #e8ae5b
-!*color4: #6495ed
-!*color5: #deb887
-!*color6: #b0c4de
-!*color7: #bbaa99
-!*color8: #554444
-!*color9: #cc5533
-!*color10: #88aa22
-!*color11: #ffa75d
-!*color12: #87ceeb
-!*color13: #996600
-!*color14: #b0c4de
-!*color15: #ddccbb
-
-!thayer colors
-
-!black
-!*color0: #1B1D1E
-!*color8: #505354
-!*color0: #262729
-!*color8: #554444
-
-!red
-!*color1: #F92672
-!*color9: #FF669D
-!green
-!*color2: #A6E22E
-!*color10: #BEED5F
-!yellow
-!*color3: #FD971F
-!*color11: #E6DB74
-!blue
-!*color4: #66D9EF
-!*color12: #66D9EF
-!magenta
-!*color5: #9E6FFE
-!*color13: #9E6FFE
-!cyan
-!*color6: #5E7175
-!*color14: #A3BABF
-!white
-!*color7: #CCCCC6
-!*color15: #F8F8F2
-
-
-!Justin Colors
-
-!black text
-!*color0: #242424
-!*color8: #cdb5cd
-
-!red text
-!*color1: #bf7979
-!*color9: #f4a45f
-
-!green text
-!*color2: #97b26b
-!*color10: #c5f779
-
-!yellow text
-!*color3: #cdcda1
-!*color11: #ffffaf
-
-!blue text
-!*color4: #86a2be
-!*color12: #98afd9
-
-!magenta text
-!*color5: #d9b798
-!*color13: #d7d998
-
-!cyan text
-!*color6: #a1b5cd
-!*color14: #a1b5cd
-
-!white
-!*color7: #ffffff
-!*color15: #dedede
