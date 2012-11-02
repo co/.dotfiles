@@ -1,10 +1,10 @@
 ---------------------------
--- Default awesome theme --
+-- co awesome theme --
 ---------------------------
 
 theme = {}
 
-theme.font      = "erusfont 9"
+theme.font      = "Fixed 11"
 
 backColor       = "#2A2829"
 selectColor     = "#0099DD"
@@ -34,7 +34,7 @@ theme.fg_mem_widget = "#8766c9"
 theme.fg_pac_widget = "#ff5f00"
 
 -- There are other variable sets
--- overriding the default one when
+-- overriding the co one when
 -- defined, the sets are:
 -- [taglist|tasklist]_[bg|fg]_[focus|urgent]
 -- titlebar_[bg|fg]_[normal|focus]
@@ -44,10 +44,8 @@ theme.fg_pac_widget = "#ff5f00"
 --theme.taglist_bg_focus = "#ff0000"
 
 -- Display the taglist squares
---theme.taglist_squares_sel   = "/home/co/.config/awesome/themes/default/taglist/squarefw.png"
---theme.taglist_squares_unsel = "/home/co/.config/awesome/themes/default/taglist/squarew.png"
-
-theme.tasklist_floating_icon = "/usr/share/awesome/themes/default/tasklist/floatingw.png"
+--theme.taglist_squares_sel   = "/home/co/.config/awesome/themes/co/taglist/squarefw.png"
+--theme.taglist_squares_unsel = "/home/co/.config/awesome/themes/co/taglist/squarew.png"
 
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
@@ -63,20 +61,20 @@ theme.menu_width  = "200"
 -- Define the image to load
 
 -- You can use your own command to set your wallpaper
---theme.wallpaper_cmd = { "awsetbg /usr/share/awesome/themes/default/background.png" }
+--theme.wallpaper_cmd = { "awsetbg /usr/share/awesome/themes/co/background.png" }
 
 -- You can use your own layout icons like this:
-theme.layout_fairh = "~/.config/awesome/themes/default/layouts/fairhw.png"
-theme.layout_fairv = "~/.config/awesome/themes/default/layouts/fairvw.png"
-theme.layout_floating  = "~/.config/awesome/themes/default/layouts/floatingw.png"
-theme.layout_magnifier = "~/.config/awesome/themes/default/layouts/magnifierw.png"
-theme.layout_max = "~/.config/awesome/themes/default/layouts/maxw.png"
-theme.layout_fullscreen = "~/.config/awesome/themes/default/layouts/fullscreenw.png"
-theme.layout_tilebottom = "~/.config/awesome/themes/default/layouts/tilebottomw.png"
-theme.layout_tileleft   = "~/.config/awesome/themes/default/layouts/tileleftw.png"
-theme.layout_tile = "~/.config/awesome/themes/default/layouts/tilew.png"
-theme.layout_tiletop = "~/.config/awesome/themes/default/layouts/tiletopw.png"
-theme.layout_spiral  = "~/.config/awesome/themes/default/layouts/spiralw.png"
-theme.layout_dwindle = "~/.config/awesome/themes/default/layouts/dwindlew.png"
+theme.layout_fairh = "~/.config/awesome/themes/co/layouts/fairhw.png"
+theme.layout_fairv = "~/.config/awesome/themes/co/layouts/fairvw.png"
+theme.layout_floating  = "~/.config/awesome/themes/co/layouts/floatingw.png"
+theme.layout_magnifier = "~/.config/awesome/themes/co/layouts/magnifierw.png"
+theme.layout_max = "~/.config/awesome/themes/co/layouts/maxw.png"
+theme.layout_fullscreen = "~/.config/awesome/themes/co/layouts/fullscreenw.png"
+theme.layout_tilebottom = "~/.config/awesome/themes/co/layouts/tilebottomw.png"
+theme.layout_tileleft   = "~/.config/awesome/themes/co/layouts/tileleftw.png"
+theme.layout_tile = "~/.config/awesome/themes/co/layouts/tilew.png"
+theme.layout_tiletop = "~/.config/awesome/themes/co/layouts/tiletopw.png"
+theme.layout_spiral  = "~/.config/awesome/themes/co/layouts/spiralw.png"
+theme.layout_dwindle = "~/.config/awesome/themes/co/layouts/dwindlew.png"
 
 return theme
