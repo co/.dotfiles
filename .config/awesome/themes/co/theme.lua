@@ -43,10 +43,6 @@ theme.fg_pac_widget = "#ff5f00"
 -- Example:
 --theme.taglist_bg_focus = "#ff0000"
 
--- Display the taglist squares
---theme.taglist_squares_sel   = "/home/co/.config/awesome/themes/co/taglist/squarefw.png"
---theme.taglist_squares_unsel = "/home/co/.config/awesome/themes/co/taglist/squarew.png"
-
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
@@ -59,9 +55,6 @@ theme.menu_width  = "200"
 --theme.bg_widget = "#cc0000"
 
 -- Define the image to load
-
--- You can use your own command to set your wallpaper
---theme.wallpaper_cmd = { "awsetbg /usr/share/awesome/themes/co/background.png" }
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "~/.config/awesome/themes/co/layouts/fairhw.png"
