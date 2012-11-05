@@ -8,7 +8,6 @@ require("beautiful")
 require("naughty")
 require("vicious")
 
--- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
 beautiful.init("/home/co/.config/awesome/themes/co/theme.lua")
 
@@ -61,6 +60,7 @@ awful.button({ modkey }, 1, awful.client.movetotag),
 awful.button({ }, 3, awful.tag.viewtoggle),
 awful.button({ modkey }, 3, awful.client.toggletag)
 )
+
 mytasklist = {}
 mytasklist.buttons = awful.util.table.join(
 awful.button({ }, 1, function (c)
@@ -117,13 +117,10 @@ for s = 1, screen.count() do
 	}
 end
 
--- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
 awful.button({ }, 3, function () mymainmenu:toggle() end)
 ))
--- }}}
 
--- {{{ Key bindings
 globalkeys = awful.util.table.join(
 awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
 awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
@@ -241,8 +238,6 @@ awful.button({ modkey }, 3, awful.mouse.client.resize))
 
 -- Set keys
 root.keys(globalkeys)
--- }}}
---
 term = 1
 web  = 2
 code = 3
@@ -280,21 +275,10 @@ for s = 1, screen.count() do
 	}
 end
 
--- }}}
--- {{{ Signals
 -- Signal function to execute when a new client appears.
 client.add_signal("manage", function (c, startup)
 	-- Add a titlebar
 	-- awful.titlebar.add(c, { modkey = modkey })
-
-	-- Enable sloppy focus
-	c:add_signal("mouse::enter", function(c)
-		if awful.layout.get(c.screen) ~= awful.layout.suit.magnifier
-			and awful.client.focus.filter(c) then
-			client.focus = c
-		end
-	end)
-
 	if not startup then
 		-- Set the windows at the slave,
 		-- i.e. put it at the end of others instead of setting it master.
@@ -310,4 +294,3 @@ end)
 
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
--- }}}
