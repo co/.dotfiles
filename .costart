@@ -1,8 +1,8 @@
+#!/bin/sh
 ## Runs when x starts (.xinitrc)
 #feh --bg-center /home/co/co/pics/wallpaper/d1.png
-    setxkbmap se -variant svdvorak
-feh --bg-fill /home/co/co/pics/wp/min/Monocle_gray.png &
-
+setxkbmap se -variant codvorak
+feh --bg-fill /home/co/co/pics/wp/atl.png
 #
 ## Caps <- Ctrl
 xmodmap -e 'keycode 66 = Control_L'
@@ -11,10 +11,5 @@ xmodmap -e 'add Control = Control_L'
 sleep 0.3
 
 #updates fonts.
-xset +fp /usr/share/fonts/local
-xset fp rehash
-
-#starts pidgin
-google-chrome &
-
-~/bin/touchpad_settings.sh
+#xset +fp /usr/share/fonts/local
+#xset fp rehash

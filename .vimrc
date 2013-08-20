@@ -28,11 +28,9 @@ set title
  Bundle 'mileszs/ack.vim'
  Bundle 'vim-scripts/Gundo'
  Bundle 'vim-scripts/taglist.vim'
- Bundle 'vim-scripts/YankRing.vim'
  Bundle 'msanders/snipmate.vim'
  Bundle 'vim-scripts/AutoComplPop'
  Bundle 'Lokaltog/vim-powerline'
- Bundle 'mattsa/vim-fuzzee'
  Bundle 'sjl/clam.vim'
  Bundle 'sjl/splice.vim.git'
  "Bundle 'vim-scripts/a.vim' "<--This shit, don't use it.
@@ -46,7 +44,7 @@ set title
  Bundle 'ciaranm/inkpot'
  Bundle 'nanotech/jellybeans.vim'
  Bundle 'aerosol/vim-compot'
-
+ Bundle 'klen/python-mode'
  " file specific
 "Bundle 'vim-scripts/OmniCppComplete'
 "Bundle 'Rip-Rip/clang_complete'
@@ -171,9 +169,6 @@ set undofile
 set undodir=~/.vim/undo//
 set undolevels=1000
 
-" YankRing history file.
-let g:yankring_history_dir = '$HOME/.vim/history/'
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indenting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -181,7 +176,7 @@ let g:yankring_history_dir = '$HOME/.vim/history/'
 set autoindent
 
 " Spaces are better than a tab character.
-"set expandtab
+set expandtab
 set smarttab
 
 " Who wants an 8 character tab?  Not me!

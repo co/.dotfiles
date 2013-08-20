@@ -5,12 +5,12 @@ style "user-font" {
 	#font_name = "Terminal 11"
 	#font_name = "ProFont 11"
 	#font_name = "Fixed 7"
-	font_name = "Terminus 18"
+	font_name = "Terminus 11"
 }
 
 widget_class "*" style "user-font"
 
-gtk-font-name="Neep Medium Semi-Condensed 14"
+gtk-font-name="Terminus 11"
 
 include "/home/co/.gtkrc.mine"
 

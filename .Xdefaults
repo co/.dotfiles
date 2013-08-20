@@ -6,6 +6,7 @@ URxvt.background:       rgb:29/29/26
 URxvt*scrollBar:        false
 
 URxvt*font: 10x20
+URxvt*font: *-fixed-*-*-*-18-*
 !bra men stor
 !URxvt*font: xft:Fixed:size=11
 

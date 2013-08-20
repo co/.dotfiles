@@ -4,7 +4,7 @@
 
 theme = {}
 
-theme.font      = "Fixed 11"
+theme.font      = "Terminus 11"
 
 backColor       = "#2A2829"
 selectColor     = "#0099DD"
