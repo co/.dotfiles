@@ -1,1 +1,1 @@
-set guifont=Envy\ Code\ R\ 10
+set guifont=Droid\ Sans\ Mono\ 11

@@ -23,6 +23,7 @@ LESSOPEN="|lesspipe.sh %s"; export LESSOPEN
 PATH=$PATH:/home/co/bin:.
 alias sv="sudo vim"
 alias c="clear"
+alias ack="ack-grep"
 alias n="urxvt &"
 alias vi="vim"
 alias ls='ls --color=auto'
