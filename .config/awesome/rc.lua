@@ -41,11 +41,6 @@ end
 -- Create a textclock widget
 mytextclock = awful.widget.textclock({ align = "right" })
 
-netwidget = widget({ type = "textbox" })
-vicious.register(netwidget, vicious.widgets.net, '<span color="'
-.. beautiful.fg_netdn_widget ..'">[↓ ${wlan0 down_kb}]</span> <span color="'
-.. beautiful.fg_netup_widget ..'">[${wlan0 up_kb} ↑]</span>', 3)
-
 -- Create a systray
 mysystray = widget({ type = "systray" })
 
@@ -110,7 +105,6 @@ for s = 1, screen.count() do
 		},
 		mylayoutbox[s],
 		mytextclock, 
-		upicon, netwidget, downicon,
 		s == 1 and mysystray or nil,
 		mytasklist[s],
 		layout = awful.widget.layout.horizontal.rightleft
