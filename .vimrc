@@ -27,12 +27,16 @@ set title
  Bundle 'tpope/vim-repeat'
  Bundle 'mileszs/ack.vim'
  Bundle 'vim-scripts/Gundo'
- Bundle 'vim-scripts/taglist.vim'
+ Bundle 'majutsushi/tagbar'
  Bundle 'msanders/snipmate.vim'
  Bundle 'vim-scripts/AutoComplPop'
  Bundle 'Lokaltog/vim-powerline'
  Bundle 'sjl/clam.vim'
  Bundle 'sjl/splice.vim.git'
+
+ Bundle 'reinh/vim-makegreen'
+ Bundle 'lambdalisue/nose.vim'
+ Bundle 'klen/python-mode'
  "Bundle 'vim-scripts/a.vim' "<--This shit, don't use it.
 
  " colorschemes
@@ -44,7 +48,7 @@ set title
  Bundle 'ciaranm/inkpot'
  Bundle 'nanotech/jellybeans.vim'
  Bundle 'aerosol/vim-compot'
- Bundle 'klen/python-mode'
+ Bundle 'junegunn/seoul256.vim'
  " file specific
 "Bundle 'vim-scripts/OmniCppComplete'
 "Bundle 'Rip-Rip/clang_complete'
@@ -113,7 +117,7 @@ syntax on
 "colorscheme darkspectrum
 "colorscheme no_quarter
 "colorscheme zenesque    "Only gray.
-colorscheme lucius      "Dark grey low contrast, with light alternative.
+colorscheme seoul256      "Dark grey low contrast, with light alternative.
 
 "Light colorschemes
 "colorscheme bclear      "White and colorful.
@@ -365,3 +369,10 @@ nnoremap <silent> <leader>? :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
   let &t_SI .= "\<Esc>[4 q"
   " solid block
   let &t_EI .= "\<Esc>[2 q"
+
+""""""""""""""""""""""""""""""""""""""""""
+" Testing
+""""""""""""""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.py compiler nose
+let g:makegreen_stay_on_file=1
+map <leader>t :MakeGreen<cr>
