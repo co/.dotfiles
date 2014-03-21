@@ -1,1 +1,1 @@
-cp ./se /usr/share/X11/xkb/symbols/
+cp ./coe /usr/share/X11/xkb/symbols/

@@ -1,7 +1,7 @@
 #!/bin/sh
 ## Runs when x starts (.xinitrc)
 #feh --bg-center /home/co/co/pics/wallpaper/d1.png
-setxkbmap se -variant codvorak
+setxkbmap coe
 feh --bg-fill /home/co/co/pics/wp/atl.png
 #
 ## Caps <- Ctrl
